@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "loan_approval_scoring"
+version = "0.0.1"
+description = "Lending Club is skeeing the expertise of a data science conslutant to perform a compreshensive data cleaning, explroatary data analysis and predictive modelling on theri loand application dataset. The rpoject will also explore the potential for deploying a real-time socring application. The primary objective is to prepare the dataset for accurate analysis and modeling, understand the key avariables influcencing the load approval, and recommend a predictive model for classifying loan applications."
+authors = [
+  { name = "Kieran F. Noonan" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.12.6"
+
+[tool.black]
+line-length = 99
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+)/
+'''
+
+[tool.ruff.lint.isort]
+known_first_party = ["loan_approval_scoring"]
+force_sort_within_sections = true
