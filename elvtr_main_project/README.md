@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-Lending Club is skeeing the expertise of a data science conslutant to perform a compreshensive data cleaning, explroatary data analysis and predictive modelling on theri loand application dataset. The rpoject will also explore the potential for deploying a real-time socring application. The primary objective is to prepare the dataset for accurate analysis and modeling, understand the key avariables influcencing the load approval, and recommend a predictive model for classifying loan applications.
+Lending Club is seeking the expertise of a data science consultant to perform comprehensive data cleaning, exploratory data analysis and predictive modelling on their loan application dataset. The project will also explore the potential for deploying a real-time scoring application. The primary objective is to prepare the dataset for accurate analysis and modelling, understand the key variables influencing loan approval, and recommend a predictive model for classifying loan applications.
 
 ## Project Organization
 
