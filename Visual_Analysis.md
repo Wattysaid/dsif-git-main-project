@@ -21,19 +21,6 @@ To further investigate, I used frequency and proportion charts on `emp_length`.
 - The bar chart visualises the spread of employment lengths, with "10+ years" as the most frequent.
 - The pie chart illustrates each category's share, providing a balanced perspective of employment lengths within the dataset.
 
-### Handling Object and Float Features
-
-Several columns required type conversion or encoding after analysis:
-
-#### Actions Post-Analysis
-
-- **Convert String to Integer**: `term` and `emp_length`
-- **Convert String to Float**: `int_rate` and `revol_util`
-- **Encode Categorical Values**: `sub_grade`, `loan_status`, `hardship_loan_status`
-- **Convert to Date/Time**: `issue_d`, `earliest_cr_line`, `last_pymnt_d`, and others
-- **Remove Irrelevant Columns**: `emp_title`, `url`
-- **Evaluate Categorical Consistency**: `zip_code`
-
 ### 📉 Boolean Feature Analysis
 For Boolean features, I reviewed True/False distributions to ensure data completeness.
 
@@ -54,14 +41,43 @@ Numeric features, like `acc_now_delinq`, were examined using histograms and box 
 
 The histogram highlights a skewed distribution in `acc_now_delinq`, while the box plot identifies several outliers.
 
-### 📅 Date-Time Conversions
-For chronological insights, I converted columns like `issue_d` and `last_pymnt_d` to date-time formats, generating year and month columns for added granularity.
-
 ### 🧹 Data Cleaning Actions
-Based on the findings:
-- **Strings were converted** to integers (e.g., `term`) and floats (e.g., `int_rate`).
-- **Categorical values were encoded** where appropriate.
-- **Non-analytical columns were removed** to streamline the dataset.
+
+We have identified the following columns that require conversion or encoding:
+
+#### Actions Post-Analysis
+
+##### Convert String to Integer
+- **term**: Extract numerical part and convert to integer (keep `36` and `60`).
+- **emp_length**: Extract numerical years and convert to integer.
+
+##### Convert String to Float
+- **int_rate**: Convert to float after removing any non-numeric characters.
+- **revol_util**: Convert to float after removing the "%" symbol.
+
+##### Encode Categorical Values
+- **sub_grade**: Use as is or encode if necessary; consider dropping **grade** if redundant.
+- **loan_status**: Group or encode based on loan status levels.
+- **hardship_loan_status**: Analyze and group similar hardship statuses if logical.
+
+##### Convert to Date/Time Format
+- **issue_d**: Convert to date/time for chronological analysis.
+- **earliest_cr_line**: Convert to date/time to track the earliest credit history.
+- **last_pymnt_d**: Convert to date/time; create separate year and month columns.
+- **next_pymnt_d**: Convert to date/time; add year and month columns.
+- **last_credit_pull_d**: Convert to date/time for recent credit activity insights.
+- **sec_app_earliest_cr_line**: Convert to date/time for secondary applicants’ credit history.
+- **hardship_start_date**: Convert to date/time; add year and month columns.
+- **hardship_end_date**: Convert to date/time; add year and month columns.
+- **payment_plan_start_date**: Convert to date/time; add year and month columns.
+
+##### Remove Non-Analytical or Irrelevant Columns
+- **emp_title**: Not relevant for numerical analysis; remove.
+- **url**: Non-analytical; remove as it doesn’t contribute to analysis.
+
+##### Evaluate for Categorical Consistency
+- **zip_code**: Analyze the first few digits if relevant to extract location-based insights.
+
 
 ### Summary
 This mix of statistical evaluations and visualisations provided a clear understanding of each feature, establishing a robust foundation for subsequent modelling.
