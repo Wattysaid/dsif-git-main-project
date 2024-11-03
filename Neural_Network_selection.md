@@ -1,5 +1,7 @@
 ## 🧠 Neural Network Challenger Model: Simple Architecture
 
+The results are misleading and there still seems to be data leakage and overfitting. Running out of time I'll tackle this over the next few days.
+
 ## 🧠 Neural Network Model Summary
 
 ### Objective
@@ -106,7 +108,7 @@ The complex architecture demonstrates high accuracy and low loss, supporting its
 
 ![image](https://github.com/user-attachments/assets/d368756f-15ea-479a-9e0e-96603c1765e0)
 
-## Regularisation Techniques to improve results
+## Regularisation Techniques to Improve Results
 
 ## 🧠 Neural Network Challenger Model with Dropout Layers
 
@@ -201,20 +203,20 @@ The model with a 50% dropout rate achieved strong validation metrics, balancing 
 
 ![image](https://github.com/user-attachments/assets/02ea78f4-2b03-40e9-a34e-37b9d6c5f9ed)
 
-## 🧠 Neural Network Challenger Model with Batch Normalization and Dropout
+## 🧠 Neural Network Challenger Model with Batch Normalisation and Dropout
 
-In this model, I combined Batch Normalization and Dropout layers to improve both model stability and generalisation. Batch Normalization helps in accelerating training and stabilising learning, while Dropout reduces overfitting by randomly deactivating neurons during training.
+In this model, I combined Batch Normalisation and Dropout layers to improve both model stability and generalisation. Batch Normalisation helps in accelerating training and stabilising learning, while Dropout reduces overfitting by randomly deactivating neurons during training.
 
 ### Model Architecture
 
 - **Layer 1**: Dense layer with 64 neurons and ReLU activation.
-  - **Batch Normalization**: Normalises activations to stabilise training.
+  - **Batch Normalisation**: Normalises activations to stabilise training.
   - **Dropout**: 50% dropout rate for robust regularisation.
 - **Layer 2**: Dense layer with 32 neurons and ReLU activation.
-  - **Batch Normalization**: Further normalises intermediate activations.
+  - **Batch Normalisation**: Further normalises intermediate activations.
   - **Dropout**: 50% dropout rate to control overfitting.
 - **Layer 3**: Dense layer with 16 neurons and ReLU activation.
-  - **Batch Normalization**: Ensures stable learning.
+  - **Batch Normalisation**: Ensures stable learning.
   - **Dropout**: 50% dropout rate for consistent regularisation.
 - **Output Layer**: Dense layer with 1 neuron and sigmoid activation, providing a probability for loan default prediction.
 
@@ -227,11 +229,11 @@ In this model, I combined Batch Normalization and Dropout layers to improve both
 
 ### Training Curve Analysis
 
-The training and validation accuracy curves show close convergence, indicating that the model generalises well on the validation set. The combination of Batch Normalization and Dropout contributed to stable training and effective overfitting control, with the validation accuracy reaching a plateau after a few epochs. This balance allowed the model to learn efficiently without significant performance degradation on unseen data.
+The training and validation accuracy curves show close convergence, indicating that the model generalises well on the validation set. The combination of Batch Normalisation and Dropout contributed to stable training and effective overfitting control, with the validation accuracy reaching a plateau after a few epochs. This balance allowed the model to learn efficiently without significant performance degradation on unseen data.
 
 ### Conclusion
 
-The inclusion of Batch Normalization with Dropout resulted in a well-performing model with high accuracy, precision, and recall. This model is a strong candidate for deployment due to its robustness and improved generalisation capabilities.
+The inclusion of Batch Normalisation with Dropout resulted in a well-performing model with high accuracy, precision, and recall. This model is a strong candidate for deployment due to its robustness and improved generalisation capabilities.
 
 ![image](https://github.com/user-attachments/assets/584bb647-ccc5-48e9-9935-6e9cc050ab91)
 
@@ -264,16 +266,16 @@ With a 20% dropout rate, this model achieved high accuracy and maintained effect
 
 ![image](https://github.com/user-attachments/assets/f9dfd2b4-7565-44cf-8f00-6df03000175b)
 
-## 🧠 Neural Network Challenger Model with L2 Regularization
+## 🧠 Neural Network Challenger Model with L2 Regularisation
 
 This model applies L2 regularisation to each dense layer to penalise large weights and improve generalisation. L2 regularisation helps reduce overfitting by keeping the model parameters in check, leading to better stability in performance.
 
 ### Model Architecture
 
 - **Layer 1**: Dense layer with 16 neurons and ReLU activation.
-  - **L2 Regularization**: Applied with a regularisation factor of 0.01.
+  - **L2 Regularisation**: Applied with a regularisation factor of 0.01.
 - **Layer 2**: Dense layer with 8 neurons and ReLU activation.
-  - **L2 Regularization**: Also applied with a factor of 0.01.
+  - **L2 Regularisation**: Also applied with a factor of 0.01.
 - **Output Layer**: Dense layer with 1 neuron and sigmoid activation, outputting a probability score for loan default prediction.
 
 ### Training and Validation Results
@@ -295,20 +297,20 @@ This model with L2 regularisation demonstrated high accuracy, AUC, precision, an
 
 ![image](https://github.com/user-attachments/assets/c0bd0481-f8e8-47b1-b314-a7bf6eaeb983)
 
-## 🧠 Neural Network Challenger Model with L2 Regularization and Dropout
+## 🧠 Neural Network Challenger Model with L2 Regularisation and Dropout
 
 In this model, I combined L2 regularisation with dropout to control overfitting and improve generalisation. L2 regularisation penalises large weights, while dropout randomly deactivates neurons during training to prevent the model from relying too heavily on any single neuron.
 
 ### Model Architecture
 
 - **Layer 1**: Dense layer with 64 neurons and ReLU activation.
-  - **L2 Regularization**: Applied with a regularisation factor of 0.001.
+  - **L2 Regularisation**: Applied with a regularisation factor of 0.001.
   - **Dropout**: 30% dropout rate to prevent overfitting.
 - **Layer 2**: Dense layer with 32 neurons and ReLU activation.
-  - **L2 Regularization**: Applied with a regularisation factor of 0.001.
+  - **L2 Regularisation**: Applied with a regularisation factor of 0.001.
   - **Dropout**: 30% dropout rate to maintain regularisation.
 - **Layer 3**: Dense layer with 16 neurons and ReLU activation.
-  - **L2 Regularization**: Applied with a regularisation factor of 0.001.
+  - **L2 Regularisation**: Applied with a regularisation factor of 0.001.
   - **Dropout**: 30% dropout rate to ensure robustness.
 - **Output Layer**: Dense layer with 1 neuron and sigmoid activation, producing a probability score for loan default prediction.
 
@@ -329,7 +331,4 @@ The training and validation curves display a stable progression, with minimal di
 
 The combination of L2 regularisation and dropout allowed this model to achieve high accuracy, AUC, precision, and recall. The stability and strong performance on validation data make it a robust candidate for deployment, especially in scenarios where overfitting control is critical.
 
-
 ![image](https://github.com/user-attachments/assets/b56241f4-7161-4cff-a0af-b5da7df728cd)
-
-
