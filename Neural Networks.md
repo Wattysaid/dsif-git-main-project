@@ -1,20 +1,5 @@
 ## 🧠 Neural Network Challenger Model: Simple Architecture
 
-## 🌟 Best Performing Neural Network Model: Intermediate Architecture
-
-After testing multiple neural network architectures, the intermediate model emerged as the best performer, balancing high accuracy and efficient computational cost. Here’s a summary of its results:
-
-### Key Metrics
-
-- **Training Accuracy**: 98.62%
-- **Validation Accuracy**: 98.72%
-- **Training Loss**: 0.0478
-- **Validation Loss**: 0.0505
-
-### Model Insights
-
-This intermediate architecture, with three hidden layers (32, 16, and 8 neurons), effectively captured the patterns in the data while avoiding overfitting. The training and validation accuracy curves converged closely, indicating that the model generalises well to unseen data. 
-
 For this neural network experiment, I opted for a simpler model architecture to evaluate whether a more streamlined network could achieve comparable performance. This model acts as a challenger by testing if fewer layers and neurons can still capture the predictive patterns in our data with high accuracy.
 
 ### Model Architecture
