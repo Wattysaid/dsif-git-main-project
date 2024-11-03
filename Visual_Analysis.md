@@ -7,6 +7,8 @@ I started by identifying the number of unique values in each categorical feature
 
 ![image](https://github.com/user-attachments/assets/e3a100c0-a8d3-4d5e-aaeb-8de5af6917cd)
 
+
+
 This bar chart visualises unique counts across columns like `emp_title`, `title`, and `zip_code`, highlighting `emp_title` with a high count of unique values, which may complicate encoding.
 
 ### 📊 Frequency Distribution and Proportion Analysis
