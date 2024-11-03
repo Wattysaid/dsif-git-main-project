@@ -1,5 +1,17 @@
 ## 🔍 Data Analysis Process
 
+## 🔗 Navigation Menu
+
+- 📘 [README](https://github.com/Wattysaid/dsif-git-main-project/blob/main/README.md)
+- 📄 [Overview of DataFrame Sequence and Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/DataFrame_Sequence_and_Processing_Overview.md)
+- 📊 [ELVTR Report](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ELVTR_report.md)
+- 🔍 [Feature Selection and Challenges](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Feature_selection_and_challenges.md)
+- 📑 [Key Lists for Data Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Key_Lists_for_Data_Processing.md)
+- 🤖 [ML Models and Results](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ML_models_and_results.md)
+- 🧠 [Neural Network Selection](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Neural_Network_selection.md)
+- ⚙️ [Understanding Feature Impact](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Understanding_feature_impact.md)
+- 📈 [Visual Analysis](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Visual_Analysis.md)
+
 I organised the analysis by categorising features into Boolean, numerical, and categorical types, performing an Exploratory Data Analysis (EDA) for each group to understand unique values, distributions, and any potential inconsistencies.
 
 ### 🧪 Unique Value Counts in Categorical Columns
