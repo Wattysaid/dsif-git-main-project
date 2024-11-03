@@ -140,7 +140,7 @@ This project involves a series of transformations and analyses to prepare the lo
 
 # 🔢 Key Lists for Data Processing
 
-[Overview](#overview) | [DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence) | [Feature Lists](#feature-lists) | [Summary](#summary)
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 Throughout the analysis, several key lists are used to organise and manage specific groups of features. These lists help ensure a structured approach to feature transformation, selection, and analysis.
 
