@@ -8,8 +8,8 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 - [🔄 Project Workflow](#-project-workflow)
 - [🧠 Key Concepts Demonstrated](#-key-concepts-demonstrated)
 - [📋 Requirements](#-requirements)
-- [📊 DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)
-- [🔢 Key Lists for Data Processing](#key-lists-for-data-processing)
+- [📊 DataFrames and Their Processing Sequence](#-dataframes-and-their-processing-sequence)
+- [🔢 Key Lists for Data Processing](#-key-lists-for-data-processing)
 
   ---
 
