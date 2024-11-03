@@ -1,5 +1,55 @@
 # 🔍 Feature Selection for Loan Default Prediction
 
+### 📋 Feature Selection Summary
+
+Here is a breakdown of the RFE-selected features according to my predefined feature groups and the pre-hardship fields.
+
+---
+
+### 🗂️ Features Found in Feature Groups
+
+- **Credit History**:
+  - `mo_sin_old_il_acct`
+  - `mo_sin_old_rev_tl_op`
+
+- **Current Debt and Payment Behaviours**:
+  - `bc_open_to_buy`
+  - `revol_bal`
+  - `total_bal_ex_mort`
+
+- **Employment**:
+  - `annual_inc`
+
+- **Loan Performance**:
+  - `total_rec_int`
+  - `total_rec_late_fee`
+  - `total_rec_prncp`
+
+---
+
+### 🔄 Features in Pre-Hardship Fields
+
+The following RFE-selected features are also part of the pre-hardship fields, meaning they capture borrower data available prior to any hardship events:
+
+- `annual_inc`
+- `bc_open_to_buy`
+- `dti`
+- `il_util`
+- `installment`
+- `mo_sin_old_il_acct`
+- `mo_sin_old_rev_tl_op`
+- `mo_sin_rcnt_rev_tl_op`
+- `mo_sin_rcnt_tl`
+- `mths_since_rcnt_il`
+- `mths_since_recent_bc`
+- `num_il_tl`
+- `revol_bal`
+- `total_bal_ex_mort`
+- `total_il_high_credit_limit`
+- `total_rec_int`
+- `total_rec_late_fee`
+- `total_rec_prncp`
+
 ## 📋 Overview
 
 To effectively build a model for predicting loan defaults, I first reviewed the data dictionary and organised features into logical groups based on their financial and behavioural relevance. This grouping was essential for gaining insights into various feature categories, ensuring a structured approach for feature engineering and selection.
@@ -77,56 +127,6 @@ After running RFE, the following features were selected, capturing key aspects o
 - `issue_d_year_kn`
 - `issue_d_month_kn`
 - `earliest_cr_line_year_kn`
-
-### 📋 Feature Selection Summary
-
-Here is a breakdown of the RFE-selected features according to my predefined feature groups and the pre-hardship fields.
-
----
-
-### 🗂️ Features Found in Feature Groups
-
-- **Credit History**:
-  - `mo_sin_old_il_acct`
-  - `mo_sin_old_rev_tl_op`
-
-- **Current Debt and Payment Behaviours**:
-  - `bc_open_to_buy`
-  - `revol_bal`
-  - `total_bal_ex_mort`
-
-- **Employment**:
-  - `annual_inc`
-
-- **Loan Performance**:
-  - `total_rec_int`
-  - `total_rec_late_fee`
-  - `total_rec_prncp`
-
----
-
-### 🔄 Features in Pre-Hardship Fields
-
-The following RFE-selected features are also part of the pre-hardship fields, meaning they capture borrower data available prior to any hardship events:
-
-- `annual_inc`
-- `bc_open_to_buy`
-- `dti`
-- `il_util`
-- `installment`
-- `mo_sin_old_il_acct`
-- `mo_sin_old_rev_tl_op`
-- `mo_sin_rcnt_rev_tl_op`
-- `mo_sin_rcnt_tl`
-- `mths_since_rcnt_il`
-- `mths_since_recent_bc`
-- `num_il_tl`
-- `revol_bal`
-- `total_bal_ex_mort`
-- `total_il_high_credit_limit`
-- `total_rec_int`
-- `total_rec_late_fee`
-- `total_rec_prncp`
 
 ---
 
