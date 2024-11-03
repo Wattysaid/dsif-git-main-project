@@ -1,5 +1,17 @@
 # 🔍 Feature Selection for Loan Default Prediction
 
+## 🔗 Navigation Menu
+
+- 📘 [README](https://github.com/Wattysaid/dsif-git-main-project/blob/main/README.md)
+- 📄 [Overview of DataFrame Sequence and Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/DataFrame_Sequence_and_Processing_Overview.md)
+- 📊 [ELVTR Report](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ELVTR_report.md)
+- 🔍 [Feature Selection and Challenges](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Feature_selection_and_challenges.md)
+- 📑 [Key Lists for Data Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Key_Lists_for_Data_Processing.md)
+- 🤖 [ML Models and Results](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ML_models_and_results.md)
+- 🧠 [Neural Network Selection](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Neural_Network_selection.md)
+- ⚙️ [Understanding Feature Impact](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Understanding_feature_impact.md)
+- 📈 [Visual Analysis](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Visual_Analysis.md)
+
 ### 📋 Feature Selection Summary
 
 The results of the RFE excercise are captured below. Before getting to these results I first reviewed the data dictionary. I created logical groupings for the data then created two groups pre and post hardship. I created this grouping off the back of the data dictionary. I then proceeded to evaluate the data I grouped under the pre-hardship category.

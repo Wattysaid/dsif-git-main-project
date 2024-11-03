@@ -1,13 +1,26 @@
 # 📊 ELVTR Data Science Main Project Report
-[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing) | [ELVTR Report](#-ELVTR-Data-Science-Main-Project-Report)
+
+## 🔗 Navigation Menu
+
+- 📘 [README](https://github.com/Wattysaid/dsif-git-main-project/blob/main/README.md)
+- 📄 [Overview of DataFrame Sequence and Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/DataFrame_Sequence_and_Processing_Overview.md)
+- 📊 [ELVTR Report](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ELVTR_report.md)
+- 🔍 [Feature Selection and Challenges](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Feature_selection_and_challenges.md)
+- 📑 [Key Lists for Data Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Key_Lists_for_Data_Processing.md)
+- 🤖 [ML Models and Results](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ML_models_and_results.md)
+- 🧠 [Neural Network Selection](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Neural_Network_selection.md)
+- ⚙️ [Understanding Feature Impact](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Understanding_feature_impact.md)
+- 📈 [Visual Analysis](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Visual_Analysis.md)
 
 ## 🧠 Methodology, Approach, and Model Selection Rationale
 
-This project aims to classify loan applications for Lending Club by analyzing historical data to predict loan repayment likelihood. The approach included these key stages:
+The aim of this project was to classify loan applications for Lending Club by analyzing historical data to predict loan repayment likelyhood. 
+
+The approach included these key stages:
 
 1. **Data Cleaning and Preprocessing**: 🧹 Missing values were handled, categorical variables encoded, and numerical variables normalized. Columns with low variance were removed, and outliers adjusted to enhance model performance.
-2. **Exploratory Data Analysis (EDA)**: 🔍 Analyzed feature correlations and distributions to gain insights into key factors influencing loan status.
-3. **Feature Engineering**: 🛠 New features were derived based on domain knowledge, enriching the dataset to improve predictive accuracy.
+2. **Exploratory Data Analysis (EDA)**: 🔍 Analyzed feature correlations and distributions to gain insights into key factors influencing loan status. Filtered features and identified meaningful trends.
+3. **Feature Engineering**: 🛠 New features were derived either via grouping or the combination of multiple data points, this enriched the dataset and improved the ML models predictive accuracy albeit.
 4. **Model Selection**: 🎯 Various models, such as Logistic Regression, Decision Trees, and Random Forest, were evaluated. Random Forest was chosen for its balance of accuracy, interpretability, and robustness.
 
 ### 🔍 Rationale for Model Selection
@@ -16,12 +29,12 @@ Random Forest was selected due to its ability to handle complex relationships an
 ## ✅ Advantages and ⚠️ Limitations of the Chosen Model
 
 ### ✅ Advantages
-- **High Accuracy and Robustness**: 💪 Random Forest provides strong predictive power with a lower risk of overfitting.
+- **High Accuracy and Robustness**: 💪 Random Forest provideded strong predictive power with a lower risk of overfitting. Yet we still have some work ahead of us to remove overfitting entirely.
 - **Interpretability**: 🕵️ Feature importance scores allow insights into key factors affecting loan decisions.
 - **Versatility**: 🌐 It handles both numerical and categorical data well, with less sensitivity to scaling or normalization.
 
 ### ⚠️ Limitations
-- **Computational Cost**: 🖥️ Training and inference can be time-consuming, impacting scalability.
+- **Computational Cost**: 🖥️ Training and inference was time consuming, neural networks feature reduction excercises along with SHAP tested my laptop. SHAP was executed with 1000 features only.
 - **Complexity in Tuning**: 🔧 Optimal performance requires intensive hyperparameter tuning.
 - **Real-Time Suitability**: ⏳ Random Forest may not be ideal for real-time applications without optimizations.
 
