@@ -31,7 +31,7 @@ To predict loan default probability effectively, several classification models w
   
    ![image](https://github.com/user-attachments/assets/09d804e5-2378-4055-a974-f0b1009d70b0)
    ![image](https://github.com/user-attachments/assets/7d3cd1f1-66c1-4ad1-9b41-5bf816124a5e)
-   ![image](https://github.com/user-attachments/assets/e996a0bb-497d-4111-bd18-392594a93698
+   ![image](https://github.com/user-attachments/assets/e996a0bb-497d-4111-bd18-392594a93698)
 
 4. **Random Forest**
    - **Accuracy**: 93.13%
