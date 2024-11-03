@@ -13,7 +13,7 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 
   ---
 
-  # 📂 Repository Structure - DSIF Main Project
+# 📂 Repository Structure - DSIF Main Project
 
 Welcome to the DSIF Main Project repository. This structure provides an organised overview of the folders and files within the project. Use the hyperlinks to quickly navigate to specific sections and access the corresponding resources.
 
