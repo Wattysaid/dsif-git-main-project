@@ -5,7 +5,7 @@ I structured my analysis by categorising features into Boolean, numerical, and c
 #### 🧪 Unique Value Counts in Categorical Columns
 I started by identifying the number of unique values in each categorical feature, helping me assess the complexity of each column and the need for potential encoding or grouping.
 
-![Unique Value Counts](unique_value_counts.png)
+![image](https://github.com/user-attachments/assets/e3a100c0-a8d3-4d5e-aaeb-8de5af6917cd)
 
 This bar chart visualises unique counts across columns like `emp_title`, `title`, and `zip_code`, highlighting `emp_title` with a high count of unique values, which may complicate encoding.
 
