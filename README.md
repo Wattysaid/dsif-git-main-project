@@ -28,26 +28,26 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 
 1. **Data Loading**:
    - Load the main loan dataset and data dictionary to understand feature meanings and relationships.
-   
-2. **Data Cleaning**:
+
+2. **Data Cleaning and Preparation**:
    - Ensure all columns are properly named and cleaned for consistency.
-   - Address issues with missing values and inconsistent data types to enhance data quality.
-   - Calculate the Variance Inflation Factor (VIF) for features to detect multicollinearity, removing highly correlated variables that could affect model performance.
+   - Address missing values and inconsistent data types to enhance data quality.
+   - Calculate the Variance Inflation Factor (VIF) to detect multicollinearity, removing highly correlated variables that could affect model stability and interpretability.
 
-3. **Feature Engineering**:
-   - Group features into logical categories, such as `Credit History`, `Employment Information`, and `Loan Performance`, to structure analysis and aid interpretability.
-   - Apply categorical encoding techniques where necessary to convert categorical variables into a format suitable for modelling.
-   - Standardise numerical features to ensure consistent scaling across variables, improving the effectiveness of models sensitive to feature scaling.
-   - Implement Synthetic Minority Over-sampling Technique (SMOTE) to balance the target variable, addressing any class imbalances and improving model robustness.
+3. **Exploratory Data Analysis (EDA)**:
+   - Visualise data distributions and correlations to uncover patterns, trends, and relationships.
+   - Identify key insights into loan performance and borrower profiles, which will guide feature selection and model design.
 
-4. **Exploratory Data Analysis (EDA)**:
-   - Visualise data distributions and assess correlations between features to uncover patterns and relationships.
-   - Identify key insights into loan performance and borrower profiles, informing feature selection and model design.
+4. **Feature Engineering and Transformation**:
+   - Group features into logical categories, such as `Credit History`, `Employment Information`, and `Loan Performance`, to aid interpretability.
+   - Apply categorical encoding to convert categorical variables into numeric format suitable for modelling.
+   - Standardise numerical features to ensure consistent scaling across variables, improving model performance for algorithms sensitive to feature scaling.
+   - Implement Synthetic Minority Over-sampling Technique (SMOTE) to balance the target variable, addressing class imbalances and improving model robustness.
 
 5. **Modelling**:
-   - Prepare data for modelling, selecting relevant features and transforming them as needed.
+   - Split data into training and testing sets for model evaluation.
    - Train various machine learning models, including traditional algorithms and neural networks, to classify loan statuses.
-   - Evaluate model performance based on chosen metrics, utilising SHAP (SHapley Additive exPlanations) values to interpret the impact of individual features on predictions, providing transparency and insights into model decisions.
+   - Evaluate model performance using chosen metrics. Utilise SHAP (SHapley Additive exPlanations) values to interpret the impact of individual features on predictions, providing transparency and insights into model decisions.
 
 
 ## 🧠 Key Concepts Demonstrated
