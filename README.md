@@ -74,6 +74,10 @@ pip install -r requirements.txt
 
 Here we'll explore at a high level the sequence of DataFrames used throughout the analysis and the key transformations applied to each. This high-level overview highlights the logical flow from raw data to final model preparation, showcasing data cleaning, feature engineering, and transformations.
 
+## Summary
+
+This project involves a series of transformations and analyses to prepare the loan data for predictive modelling. Each DataFrame builds on previous steps, ensuring a thorough and logical progression from raw data to fully prepared training and testing sets. These processing steps enable robust feature selection, handling of missing values, encoding, and scaling, laying the groundwork for a reliable model to predict loan approval statuses.
+
 ## DataFrames and Their Processing Sequence
 
 ### 1. `df` - Raw Loan Data 🗃️
@@ -133,16 +137,15 @@ The `Y` DataFrame holds the target variable for the model, representing the loan
 ### Additional DataFrames for Analysis 🛠️
 Throughout the notebook, various temporary DataFrames may be created for specific tasks such as feature selection (`selected_features`), visualisation, or detailed analysis (`datetime_headers`, `missing_cols`). These are utilised and refined as needed to finalise the data for modelling.
 
-## Summary
-
-This project involves a series of transformations and analyses to prepare the loan data for predictive modelling. Each DataFrame builds on previous steps, ensuring a thorough and logical progression from raw data to fully prepared training and testing sets. These processing steps enable robust feature selection, handling of missing values, encoding, and scaling, laying the groundwork for a reliable model to predict loan approval statuses.
-
-
 # 🔢 Key Lists for Data Processing
 
 [Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 Throughout the analysis, several key lists are used to organise and manage specific groups of features. These lists help ensure a structured approach to feature transformation, selection, and analysis.
+
+## Summary
+
+The project utilises several organised lists to streamline the handling and transformation of specific feature types within the dataset. Each list—whether for Boolean, numerical, categorical, or newly engineered features—supports a structured approach to data preparation, ensuring that features are transformed, encoded, and scaled as needed. These lists facilitate targeted processing steps, such as encoding Boolean values, scaling numerical data, and handling categorical variables, thereby maintaining data integrity and consistency across modelling phases. This organised structure allows for efficient feature engineering and selection, ultimately enhancing the model's ability to accurately predict loan approval outcomes.
 
 ## 🔍 `boolean_list` - Boolean Variables
 - **Creation and Identification**: The notebook creates the `boolean_list` by identifying binary or Boolean fields in the dataset. This is achieved by checking for columns with only `True/False` or `1/0` values, ensuring that these variables are correctly recognised.
