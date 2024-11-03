@@ -14,7 +14,7 @@
 
 ## 🧠 Methodology, Approach, and Model Selection Rationale
 
-The aim of this project was to classify loan applications for Lending Club by analyzing historical data to predict loan repayment likelyhood. 
+The aim of this project was to a loan application predictive model for Lending Club by analysing 100k client loan data to predict loan repayment likelyhood of loan defaults.
 
 The approach included these key stages:
 
