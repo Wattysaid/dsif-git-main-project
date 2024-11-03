@@ -8,10 +8,8 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 - [🔄 Project Workflow](#-project-workflow)
 - [🧠 Key Concepts Demonstrated](#-key-concepts-demonstrated)
 - [📋 Requirements](#-requirements)
-- [📊 Lending Club Loan Analysis - DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview)
-- [DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)
-- [Summary](#summary)
-- [Key Lists for Data Processing](#key-lists-for-data-processing)
+- [📊 DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)
+- [🔢 Key Lists for Data Processing](#key-lists-for-data-processing)
 
 ## 🎯 Project Objectives
 
@@ -140,7 +138,7 @@ Throughout the notebook, various temporary DataFrames may be created for specifi
 This project involves a series of transformations and analyses to prepare the loan data for predictive modelling. Each DataFrame builds on previous steps, ensuring a thorough and logical progression from raw data to fully prepared training and testing sets. These processing steps enable robust feature selection, handling of missing values, encoding, and scaling, laying the groundwork for a reliable model to predict loan approval statuses.
 
 
-# Key Lists for Data Processing
+# 🔢 Key Lists for Data Processing
 
 [Overview](#overview) | [DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence) | [Feature Lists](#feature-lists) | [Summary](#summary)
 
