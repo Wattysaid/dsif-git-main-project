@@ -85,4 +85,134 @@ The complex architecture demonstrates high accuracy and low loss, supporting its
 
 ![image](https://github.com/user-attachments/assets/d368756f-15ea-479a-9e0e-96603c1765e0)
 
+## Regularisation Techniques to improve results
+
+## 🧠 Neural Network Challenger Model with Dropout Layers
+
+To address potential overfitting and improve generalisation, I introduced Dropout layers into the neural network. This model includes regularisation through dropout, which randomly deactivates neurons during training, helping the model learn more robust features.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 32 neurons and ReLU activation.
+  - **Dropout**: 50% dropout rate to prevent over-reliance on specific neurons.
+- **Layer 2**: Dense layer with 16 neurons and ReLU activation.
+  - **Dropout**: 50% dropout rate for regularisation.
+- **Layer 3**: Dense layer with 8 neurons and ReLU activation.
+  - **Dropout**: 50% dropout rate to encourage diversity in feature learning.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, producing a probability score for default prediction.
+
+### Training and Validation Results
+
+- **AUC**: Reached a final AUC score of **0.9693**, indicating strong classification performance.
+- **Precision**: Achieved a precision of **0.9796**, reflecting the model’s accuracy in predicting defaults.
+- **Recall**: High recall at **0.9777**, ensuring that the model captures most positive instances (defaults).
+- **Validation Accuracy**: Stabilised around **97.94%** with a low validation loss of **0.0959**.
+
+### Training Curve Analysis
+
+The training and validation curves show consistent performance, with validation accuracy stabilising early, thanks to the early stopping mechanism. The dropout layers appear effective in mitigating overfitting, as seen in the close alignment of training and validation accuracies. By epoch 15, the model demonstrates solid generalisation with minimal validation loss.
+
+### Conclusion
+
+The addition of Dropout layers allowed the model to achieve high accuracy and generalise well on unseen data, with strong AUC, precision, and recall metrics. This model is a promising candidate for production, as the dropout regularisation helps maintain accuracy without overfitting.
+
+![image](https://github.com/user-attachments/assets/7bb6b05d-32a5-41d9-a194-bcf632ae0804)
+
+## 🧠 Neural Network Challenger Model with Reduced Dropout
+
+In this model, I applied a lighter regularisation approach by lowering the dropout rate to 20%, allowing more neurons to remain active during training. This was done to assess if a smaller dropout rate could maintain high generalisation while improving training performance.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 32 neurons and ReLU activation.
+  - **Dropout**: 20% dropout rate for mild regularisation.
+- **Layer 2**: Dense layer with 16 neurons and ReLU activation.
+  - **Dropout**: 20% dropout rate for reduced regularisation.
+- **Layer 3**: Dense layer with 8 neurons and ReLU activation.
+  - **Dropout**: 20% dropout rate to prevent overfitting.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, producing a probability score for loan default prediction.
+
+### Training and Validation Results
+
+- **AUC**: The model reached an AUC score of **0.9854**, indicating strong separation between classes.
+- **Precision**: High precision of **0.9810**, showing the model’s reliability in predicting defaults.
+- **Recall**: Maintained a recall of **0.9965**, ensuring most positive instances were captured.
+- **Validation Accuracy**: Stabilised around **98.31%** with a low validation loss of **0.0579**.
+
+### Training Curve Analysis
+
+The training and validation accuracy curves show close alignment, with validation accuracy converging early due to early stopping. The reduced dropout rate allowed for faster learning and a slightly higher training accuracy, while still preventing overfitting. This balance of dropout regularisation appears to be effective, as seen in the model's high precision and recall.
+
+### Conclusion
+
+With a lighter dropout rate, this model achieved a high AUC and balanced precision and recall. It is a strong candidate for deployment, as it combines efficient learning with robust generalisation.
+
+![image](https://github.com/user-attachments/assets/885fcca4-73be-4c88-a04a-0318e33fbe16)
+
+## 🧠 Neural Network Challenger Model with Increased Dropout
+
+In this version, I applied a higher dropout rate of 50% across all layers to test its impact on model generalisation. The goal was to mitigate overfitting further and evaluate if a stronger regularisation effect would improve the model’s performance on validation data.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 32 neurons and ReLU activation.
+  - **Dropout**: 50% dropout rate for robust regularisation.
+- **Layer 2**: Dense layer with 16 neurons and ReLU activation.
+  - **Dropout**: 50% dropout rate to further reduce overfitting.
+- **Layer 3**: Dense layer with 8 neurons and ReLU activation.
+  - **Dropout**: 50% dropout rate to maintain regularisation consistency.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, producing a probability score for loan default likelihood.
+
+### Training and Validation Results
+
+- **AUC**: Reached a final AUC score of **0.9686**, showing strong classification capability.
+- **Precision**: Achieved a precision of **0.9768**, indicating accuracy in default predictions.
+- **Recall**: High recall at **0.9800**, ensuring the model effectively captures most positive instances (defaults).
+- **Validation Accuracy**: Stabilised at **98.01%** with a validation loss of **0.0815**.
+
+### Training Curve Analysis
+
+The training and validation accuracy curves reveal that the increased dropout helped maintain alignment between training and validation accuracies, effectively controlling overfitting. Both metrics stabilised by around epoch 8, suggesting early convergence with the assistance of early stopping. However, the higher dropout rate also slightly reduced the training accuracy, which is expected due to the aggressive regularisation.
+
+### Conclusion
+
+The model with a 50% dropout rate achieved strong validation metrics, balancing high precision and recall with effective overfitting control. This architecture is robust, making it suitable for deployment in scenarios where overfitting poses a significant risk.
+
+![image](https://github.com/user-attachments/assets/02ea78f4-2b03-40e9-a34e-37b9d6c5f9ed)
+
+## 🧠 Neural Network Challenger Model with Batch Normalization and Dropout
+
+In this model, I combined Batch Normalization and Dropout layers to improve both model stability and generalisation. Batch Normalization helps in accelerating training and stabilising learning, while Dropout reduces overfitting by randomly deactivating neurons during training.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 64 neurons and ReLU activation.
+  - **Batch Normalization**: Normalises activations to stabilise training.
+  - **Dropout**: 50% dropout rate for robust regularisation.
+- **Layer 2**: Dense layer with 32 neurons and ReLU activation.
+  - **Batch Normalization**: Further normalises intermediate activations.
+  - **Dropout**: 50% dropout rate to control overfitting.
+- **Layer 3**: Dense layer with 16 neurons and ReLU activation.
+  - **Batch Normalization**: Ensures stable learning.
+  - **Dropout**: 50% dropout rate for consistent regularisation.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, providing a probability for loan default prediction.
+
+### Training and Validation Results
+
+- **AUC**: Achieved a final AUC of **0.9710**, indicating strong model performance in class separation.
+- **Precision**: Reached a precision of **0.9764**, reflecting accuracy in default predictions.
+- **Recall**: High recall of **0.9932**, ensuring the model captures most defaults.
+- **Validation Accuracy**: Stabilised at **98.04%** with a validation loss of **0.066**.
+
+### Training Curve Analysis
+
+The training and validation accuracy curves show close convergence, indicating that the model generalises well on the validation set. The combination of Batch Normalization and Dropout contributed to stable training and effective overfitting control, with the validation accuracy reaching a plateau after a few epochs. This balance allowed the model to learn efficiently without significant performance degradation on unseen data.
+
+### Conclusion
+
+The inclusion of Batch Normalization with Dropout resulted in a well-performing model with high accuracy, precision, and recall. This model is a strong candidate for deployment due to its robustness and improved generalisation capabilities.
+
+![image](https://github.com/user-attachments/assets/584bb647-ccc5-48e9-9935-6e9cc050ab91)
+
+
 
