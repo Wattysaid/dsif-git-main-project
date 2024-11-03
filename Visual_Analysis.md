@@ -1,91 +1,62 @@
 ## 🔍 Data Analysis Process
 
-I structured my analysis by categorising features into Boolean, numerical, and categorical types. For each group, I conducted an in-depth Exploratory Data Analysis (EDA) to understand unique values, distributions, and possible inconsistencies.
+I organised the analysis by categorising features into Boolean, numerical, and categorical types, performing an Exploratory Data Analysis (EDA) for each group to understand unique values, distributions, and any potential inconsistencies.
 
 ### 🧪 Unique Value Counts in Categorical Columns
-I started by identifying the number of unique values in each categorical feature, helping me assess the complexity of each column and the need for potential encoding or grouping.
+I began by identifying the number of unique values in categorical features to assess column complexity and determine if encoding or grouping was necessary.
 
 ![image](https://github.com/user-attachments/assets/235467ba-f7f7-4479-9c2f-111df893bd71)
-
 ![image](https://github.com/user-attachments/assets/64c1a4f9-b8b2-4279-86ff-56bb8e91fca2)
 
-This bar chart visualises unique counts across columns like `emp_title`, `title`, and `zip_code`, highlighting `emp_title` with a high count of unique values, which may complicate encoding.
+The bar chart shows the unique counts across columns like `emp_title`, `title`, and `zip_code`, with `emp_title` standing out due to its high variability, which may pose encoding challenges.
 
 ### 📊 Frequency Distribution and Proportion Analysis
-To delve deeper into specific categorical features, I analysed `emp_length` through frequency and proportion plots.
+To further investigate, I used frequency and proportion charts on `emp_length`.
 
 ![image](https://github.com/user-attachments/assets/d9e1147e-51ae-4b16-9697-128b25a351ff) 
 ![image](https://github.com/user-attachments/assets/c48ec637-09a0-484d-b703-5c78ba148b15)
 
-- The bar chart shows the distribution across employment lengths, with "10+ years" being the most common.
-- The pie chart provides a visual proportion of each category, facilitating insight into the balance of employment lengths within the data.
+- The bar chart visualises the spread of employment lengths, with "10+ years" as the most frequent.
+- The pie chart illustrates each category's share, providing a balanced perspective of employment lengths within the dataset.
 
-## Handling Object and Float Features
+### Handling Object and Float Features
 
-We have identified the following columns that require conversion or encoding:
+Several columns required type conversion or encoding after analysis:
 
-### Actions Post-Analysis
+#### Actions Post-Analysis
 
-#### Convert String to Integer
-- **term**: Extract numerical part and convert to integer (keep `36` and `60`).
-- **emp_length**: Extract numerical years and convert to integer.
-
-#### Convert String to Float
-- **int_rate**: Convert to float after removing any non-numeric characters.
-- **revol_util**: Convert to float after removing the "%" symbol.
-
-#### Encode Categorical Values
-- **sub_grade**: Use as is or encode if necessary; consider dropping **grade** if redundant.
-- **loan_status**: Group or encode based on loan status levels.
-- **hardship_loan_status**: Analyze and group similar hardship statuses if logical.
-
-#### Convert to Date/Time Format
-- **issue_d**: Convert to date/time for chronological analysis.
-- **earliest_cr_line**: Convert to date/time to track the earliest credit history.
-- **last_pymnt_d**: Convert to date/time; create separate year and month columns.
-- **next_pymnt_d**: Convert to date/time; add year and month columns.
-- **last_credit_pull_d**: Convert to date/time for recent credit activity insights.
-- **sec_app_earliest_cr_line**: Convert to date/time for secondary applicants’ credit history.
-- **hardship_start_date**: Convert to date/time; add year and month columns.
-- **hardship_end_date**: Convert to date/time; add year and month columns.
-- **payment_plan_start_date**: Convert to date/time; add year and month columns.
-
-#### Remove Non-Analytical or Irrelevant Columns
-- **emp_title**: Not relevant for numerical analysis; remove.
-- **url**: Non-analytical; remove as it doesn’t contribute to analysis.
-
-#### Evaluate for Categorical Consistency
-- **zip_code**: Analyze the first few digits if relevant to extract location-based insights.
-
+- **Convert String to Integer**: `term` and `emp_length`
+- **Convert String to Float**: `int_rate` and `revol_util`
+- **Encode Categorical Values**: `sub_grade`, `loan_status`, `hardship_loan_status`
+- **Convert to Date/Time**: `issue_d`, `earliest_cr_line`, `last_pymnt_d`, and others
+- **Remove Irrelevant Columns**: `emp_title`, `url`
+- **Evaluate Categorical Consistency**: `zip_code`
 
 ### 📉 Boolean Feature Analysis
-For Boolean columns, I examined the distribution of True/False values to ensure data completeness and balance.
+For Boolean features, I reviewed True/False distributions to ensure data completeness.
 
 ![image](https://github.com/user-attachments/assets/56bd0d7f-73c1-4706-8996-4bd4f94845ff)
 ![image](https://github.com/user-attachments/assets/59961217-faf3-45c5-999b-e6f22f7399a3)
 
-
-In the example above, `earliest_cr_line_missing_clean_kn` is fully populated with "False," indicating no missing values.
+The distribution of `earliest_cr_line_missing_clean_kn` indicates full completeness, with all values marked "False."
 
 ### 📐 Numeric Feature Distribution and Outliers
-Numeric features like `acc_now_delinq` were analysed using histograms and box plots to understand value distribution and detect outliers.
+Numeric features, like `acc_now_delinq`, were examined using histograms and box plots to uncover value distribution and detect outliers.
 
 ![image](https://github.com/user-attachments/assets/6c1f4435-ea95-46f0-9d86-9ece0212189f)
-
 ![image](https://github.com/user-attachments/assets/6c5f3e35-cd51-4c23-99c7-5e6a289c9fc0)
-
 ![image](https://github.com/user-attachments/assets/f27583e8-686d-4b65-bd78-66ad3dc2b131)
 
-The histogram shows the skewed distribution of `acc_now_delinq`, while the box plot identifies extreme values as outliers.
+The histogram highlights a skewed distribution in `acc_now_delinq`, while the box plot identifies several outliers.
 
 ### 📅 Date-Time Conversions
-To facilitate chronological analysis, I converted columns like `issue_d` and `last_pymnt_d` into date-time formats, creating year and month columns for granular analysis.
+For chronological insights, I converted columns like `issue_d` and `last_pymnt_d` to date-time formats, generating year and month columns for added granularity.
 
 ### 🧹 Data Cleaning Actions
-Based on these insights, I performed data cleaning steps:
-- **Converted** strings to integers (e.g., `term`) and floats (e.g., `int_rate`).
-- **Encoded** categorical values when necessary.
-- **Removed** non-analytical columns like `url` and `emp_title` to streamline the dataset.
+Based on the findings:
+- **Strings were converted** to integers (e.g., `term`) and floats (e.g., `int_rate`).
+- **Categorical values were encoded** where appropriate.
+- **Non-analytical columns were removed** to streamline the dataset.
 
 ### Summary
-This combination of statistical reviews and visual tools ensured a thorough understanding of each feature, laying a solid foundation for the subsequent modelling steps.
+This mix of statistical evaluations and visualisations provided a clear understanding of each feature, establishing a robust foundation for subsequent modelling.
