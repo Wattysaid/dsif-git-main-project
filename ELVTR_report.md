@@ -29,14 +29,13 @@ Random Forest was selected due to its ability to handle complex relationships an
 ## ✅ Advantages and ⚠️ Limitations of the Chosen Model
 
 ### ✅ Advantages
-- **High Accuracy and Robustness**: 💪 Random Forest provideded strong predictive power with a lower risk of overfitting. Yet we still have some work ahead of us to remove overfitting entirely.
-- **Interpretability**: 🕵️ Feature importance scores allow insights into key factors affecting loan decisions.
-- **Versatility**: 🌐 It handles both numerical and categorical data well, with less sensitivity to scaling or normalization.
+- **High Accuracy and Robustness**: Random Forest provideded strong predictive power with a lower risk of overfitting. This said we still have some work ahead of us to remove overfitting entirely.
+- **Versatility**: It handles both numerical and categorical data well, with less sensitivity to scaling or normalisation. A caveat here is that during this assignment my feature selection shifted from 102 from the original set, to over 3k with one hot encoding, and back down to 23 features after VIF removal and RFE. I ended up using binary encoding for the categorical variables.
 
 ### ⚠️ Limitations
-- **Computational Cost**: 🖥️ Training and inference was time consuming, neural networks feature reduction excercises along with SHAP tested my laptop. SHAP was executed with 1000 features only.
-- **Complexity in Tuning**: 🔧 Optimal performance requires intensive hyperparameter tuning.
-- **Real-Time Suitability**: ⏳ Random Forest may not be ideal for real-time applications without optimizations.
+- **Computational Cost**: Training and inference was time consuming, neural networks feature reduction excercises along with SHAP tested my laptop. SHAP was executed with 1000 features only.
+- **Complexity in Tuning**: Optimal performance requires intensive hyperparameter tuning.
+- **Real-Time Suitability**: Random Forest may not be ideal for real-time applications without optimizations.
 
 ## 🏗️ Architecture of the Final Solution
 
