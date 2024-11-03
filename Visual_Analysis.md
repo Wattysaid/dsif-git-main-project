@@ -12,8 +12,7 @@ This bar chart visualises unique counts across columns like `emp_title`, `title`
 #### 📊 Frequency Distribution and Proportion Analysis
 To delve deeper into specific categorical features, I analysed `emp_length` through frequency and proportion plots.
 
-![Frequency Distribution for emp_length](frequency_distribution_emp_length.png)
-![Proportion for emp_length](proportion_emp_length.png)
+![image](https://github.com/user-attachments/assets/d9e1147e-51ae-4b16-9697-128b25a351ff) | ![image](https://github.com/user-attachments/assets/c48ec637-09a0-484d-b703-5c78ba148b15)
 
 - The bar chart shows the distribution across employment lengths, with "10+ years" being the most common.
 - The pie chart provides a visual proportion of each category, facilitating insight into the balance of employment lengths within the data.
