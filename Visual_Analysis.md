@@ -48,8 +48,8 @@ We have identified the following columns that require conversion or encoding:
 #### Actions Post-Analysis
 
 ##### Convert String to Integer
-- **term**: Extract numerical part and convert to integer (keep `36` and `60`).
-- **emp_length**: Extract numerical years and convert to integer.
+- `term`: Extract numerical part and convert to integer (keep `36` and `60`).
+- `emp_length`: Extract numerical years and convert to integer.
 
 ##### Convert String to Float
 - **int_rate**: Convert to float after removing any non-numeric characters.
