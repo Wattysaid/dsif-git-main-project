@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 # 📊 Lending Club Loan Analysis - DataFrame Sequence and Processing Overview
 
-[Overview](#lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence) | [Summary](#summary)
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 Here we'll explore at a high level the sequence of DataFrames used throughout the analysis and the key transformations applied to each. This high-level overview highlights the logical flow from raw data to final model preparation, showcasing data cleaning, feature engineering, and transformations.
 
