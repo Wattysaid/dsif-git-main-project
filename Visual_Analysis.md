@@ -52,31 +52,31 @@ We have identified the following columns that require conversion or encoding:
 - `emp_length`: Extract numerical years and convert to integer.
 
 ##### Convert String to Float
-- **int_rate**: Convert to float after removing any non-numeric characters.
-- **revol_util**: Convert to float after removing the "%" symbol.
+- `int_rate`: Convert to float after removing any non-numeric characters.
+- `revol_util`: Convert to float after removing the "%" symbol.
 
 ##### Encode Categorical Values
-- **sub_grade**: Use as is or encode if necessary; consider dropping **grade** if redundant.
-- **loan_status**: Group or encode based on loan status levels.
-- **hardship_loan_status**: Analyze and group similar hardship statuses if logical.
+- `sub_grade`: Use as is or encode if necessary; consider dropping `grade` if redundant.
+- `loan_status`: Group or encode based on loan status levels.
+- `hardship_loan_status`: Analyze and group similar hardship statuses if logical.
 
 ##### Convert to Date/Time Format
-- **issue_d**: Convert to date/time for chronological analysis.
-- **earliest_cr_line**: Convert to date/time to track the earliest credit history.
-- **last_pymnt_d**: Convert to date/time; create separate year and month columns.
-- **next_pymnt_d**: Convert to date/time; add year and month columns.
-- **last_credit_pull_d**: Convert to date/time for recent credit activity insights.
-- **sec_app_earliest_cr_line**: Convert to date/time for secondary applicants’ credit history.
-- **hardship_start_date**: Convert to date/time; add year and month columns.
-- **hardship_end_date**: Convert to date/time; add year and month columns.
-- **payment_plan_start_date**: Convert to date/time; add year and month columns.
+- `issue_d`: Convert to date/time for chronological analysis.
+- `earliest_cr_line`: Convert to date/time to track the earliest credit history.
+- `last_pymnt_d`: Convert to date/time; create separate year and month columns.
+- `next_pymnt_d`: Convert to date/time; add year and month columns.
+- `last_credit_pull_d`: Convert to date/time for recent credit activity insights.
+- `sec_app_earliest_cr_line`: Convert to date/time for secondary applicants’ credit history.
+- `hardship_start_date`: Convert to date/time; add year and month columns.
+- `hardship_end_date`: Convert to date/time; add year and month columns.
+- `payment_plan_start_date`: Convert to date/time; add year and month columns.
 
 ##### Remove Non-Analytical or Irrelevant Columns
-- **emp_title**: Not relevant for numerical analysis; remove.
-- **url**: Non-analytical; remove as it doesn’t contribute to analysis.
+- `emp_title`: Not relevant for numerical analysis; remove.
+- `url`: Non-analytical; remove as it doesn’t contribute to analysis.
 
 ##### Evaluate for Categorical Consistency
-- **zip_code**: Analyze the first few digits if relevant to extract location-based insights.
+- `zip_code`: Analyze the first few digits if relevant to extract location-based insights.
 
 
 ### Summary
