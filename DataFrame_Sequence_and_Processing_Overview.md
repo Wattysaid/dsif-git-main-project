@@ -14,9 +14,6 @@
 
 ---
 
-Feel free to use this as a quick reference guide to navigate the project's main documents!
-
-
 Here we'll explore at a high level the sequence of DataFrames used throughout the analysis and the key transformations applied to each. This high-level overview highlights the logical flow from raw data to final model preparation, showcasing data cleaning, feature engineering, and transformations.
 
 ## Summary
