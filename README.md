@@ -28,18 +28,27 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 
 1. **Data Loading**:
    - Load the main loan dataset and data dictionary to understand feature meanings and relationships.
+   
 2. **Data Cleaning**:
-   - Ensure all columns are properly named and cleaned.
-   - Address issues with missing and inconsistent data.
+   - Ensure all columns are properly named and cleaned for consistency.
+   - Address issues with missing values and inconsistent data types to enhance data quality.
+   - Calculate the Variance Inflation Factor (VIF) for features to detect multicollinearity, removing highly correlated variables that could affect model performance.
+
 3. **Feature Engineering**:
-   - Group features into categories like `Credit History`, `Employment Information`, and `Loan Performance`.
-   - Create lists of pre- and post-hardship features to structure further analysis.
+   - Group features into logical categories, such as `Credit History`, `Employment Information`, and `Loan Performance`, to structure analysis and aid interpretability.
+   - Apply categorical encoding techniques where necessary to convert categorical variables into a format suitable for modelling.
+   - Standardise numerical features to ensure consistent scaling across variables, improving the effectiveness of models sensitive to feature scaling.
+   - Implement Synthetic Minority Over-sampling Technique (SMOTE) to balance the target variable, addressing any class imbalances and improving model robustness.
+
 4. **Exploratory Data Analysis (EDA)**:
-   - Visualise data distributions and correlations between features.
-   - Identify key insights about loan performance and borrower profiles.
+   - Visualise data distributions and assess correlations between features to uncover patterns and relationships.
+   - Identify key insights into loan performance and borrower profiles, informing feature selection and model design.
+
 5. **Modelling**:
-   - Prepare data for modelling with selected features.
-   - Implement and evaluate models based on chosen evaluation metrics.
+   - Prepare data for modelling, selecting relevant features and transforming them as needed.
+   - Train various machine learning models, including traditional algorithms and neural networks, to classify loan statuses.
+   - Evaluate model performance based on chosen metrics, utilising SHAP (SHapley Additive exPlanations) values to interpret the impact of individual features on predictions, providing transparency and insights into model decisions.
+
 
 ## 🧠 Key Concepts Demonstrated
 
