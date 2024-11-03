@@ -2,11 +2,11 @@
 
 ### 📋 Feature Selection Summary
 
-Here is a breakdown of the RFE-selected features according to my predefined feature groups and the pre-hardship fields.
+The results of the RFE excercise are captured below. Before getting to these results I first reviewed the data dictionary. I created logical groupings for the data then created two groups pre and post hardship. I created this grouping off the back of the data dictionary. I then proceeded to evaluate the data I grouped under the pre-hardship category.
 
 ---
 
-### 🗂️ Features Found in Feature Groups
+### 🗂️ RFE Features by logical grouping (grouping and pre-hardship)
 
 - **Credit History**:
   - `mo_sin_old_il_acct`
