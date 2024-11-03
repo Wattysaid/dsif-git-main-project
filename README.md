@@ -12,11 +12,6 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 - [DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)
 - [Summary](#summary)
 - [Key Lists for Data Processing](#key-lists-for-data-processing)
-- [Feature Lists](#feature-lists)
-- [`boolean_list` - Boolean Variables](#boolean_list---boolean-variables)
-- [`numerical_list` - Numerical Variables](#numerical_list---numerical-variables)
-- [`categorical_list` - Categorical Variables](#categorical_list---categorical-variables)
-- [`new_features` - Engineered and Derived Features](#new_features---engineered-and-derived-features)
 
 ## 🎯 Project Objectives
 
