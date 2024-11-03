@@ -11,6 +11,8 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 
 ## 🔗 Page Menu
 
+Use this as a quick reference guide to navigate the project's main documents!
+
 - 📄 [Overview of DataFrame Sequence and Processing](https://github.com/Wattysaid/dsif-git-main-project/blob/main/DataFrame_Sequence_and_Processing_Overview.md)
 - 📊 [ELVTR Report](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ELVTR_report.md)
 - 🔍 [Feature Selection and Challenges](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Feature_selection_and_challenges.md)
@@ -20,10 +22,6 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 - 📘 [README](https://github.com/Wattysaid/dsif-git-main-project/blob/main/README.md)
 - ⚙️ [Understanding Feature Impact](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Understanding_feature_impact.md)
 - 📈 [Visual Analysis](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Visual_Analysis.md)
-
----
-
-Feel free to use this as a quick reference guide to navigate the project's main documents!
 
 
   ---
