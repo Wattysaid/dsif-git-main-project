@@ -26,20 +26,6 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 - [📁 Scripts](#scripts)
 
 ---
-| **Project Outline**                                                                                                       | **Repository Structure**                                                                                                 |
-|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ## 🔗 Outline                                                                                                             | # 📂 Repository Structure - DSIF Main Project                                                                            |
-| - [📊 Lending Club Loan Analysis - ELVTR Data Science Course Project](#-lending-club-loan-analysis---elvtr-data-science-course-project) | Welcome to the DSIF Main Project repository. This structure provides an organised overview of the folders and files within the project. Use the hyperlinks to quickly navigate to specific sections and access the corresponding resources. |
-| - [🎯 Project Objectives](#-project-objectives)                                                                           |                                                                                                                          |
-| - [🔄 Project Workflow](#-project-workflow)                                                                               | ## 🔗 Table of Contents                                                                                                  |
-| - [🧠 Key Concepts Demonstrated](#-key-concepts-demonstrated)                                                             | - [📁 Notebooks](#notebooks)                                                                                             |
-| - [📋 Requirements](#-requirements)                                                                                       | - [📁 Models](#models)                                                                                                   |
-| - [📊 DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)                                | - [📁 Data](#data)                                                                                                       |
-| - [🔢 Key Lists for Data Processing](#key-lists-for-data-processing)                                                      | - [📁 Results](#results)                                                                                                 |
-|                                                                                                                           | - [📁 Documentation](#documentation)                                                                                     |
-|                                                                                                                           | - [📁 Scripts](#scripts)                                                                                                 |
-
----
 
 ## 🎯 Project Objectives
 
@@ -101,7 +87,7 @@ pip install -r requirements.txt
 
 # 📊 Lending Club Loan Analysis - DataFrame Sequence and Processing Overview
 
-[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure-dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 Here we'll explore at a high level the sequence of DataFrames used throughout the analysis and the key transformations applied to each. This high-level overview highlights the logical flow from raw data to final model preparation, showcasing data cleaning, feature engineering, and transformations.
 
@@ -172,7 +158,7 @@ Throughout the notebook, various temporary DataFrames may be created for specifi
 
 # 🔢 Key Lists for Data Processing
 
-[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure-dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 Throughout the analysis, several key lists are used to organise and manage specific groups of features. These lists help ensure a structured approach to feature transformation, selection, and analysis.
 
