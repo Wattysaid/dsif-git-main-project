@@ -12,10 +12,49 @@ This bar chart visualises unique counts across columns like `emp_title`, `title`
 #### 📊 Frequency Distribution and Proportion Analysis
 To delve deeper into specific categorical features, I analysed `emp_length` through frequency and proportion plots.
 
-![image](https://github.com/user-attachments/assets/d9e1147e-51ae-4b16-9697-128b25a351ff) | ![image](https://github.com/user-attachments/assets/c48ec637-09a0-484d-b703-5c78ba148b15)
+![image](https://github.com/user-attachments/assets/d9e1147e-51ae-4b16-9697-128b25a351ff) 
+![image](https://github.com/user-attachments/assets/c48ec637-09a0-484d-b703-5c78ba148b15)
 
 - The bar chart shows the distribution across employment lengths, with "10+ years" being the most common.
 - The pie chart provides a visual proportion of each category, facilitating insight into the balance of employment lengths within the data.
+
+### Handling Object and Float Features
+
+We have identified the following columns that require conversion or encoding:
+
+#### Actions Post-Analysis
+
+##### Convert String to Integer
+- **term**: Extract numerical part and convert to integer (keep `36` and `60`).
+- **emp_length**: Extract numerical years and convert to integer.
+
+##### Convert String to Float
+- **int_rate**: Convert to float after removing any non-numeric characters.
+- **revol_util**: Convert to float after removing the "%" symbol.
+
+##### Encode Categorical Values
+- **sub_grade**: Use as is or encode if necessary; consider dropping **grade** if redundant.
+- **loan_status**: Group or encode based on loan status levels.
+- **hardship_loan_status**: Analyze and group similar hardship statuses if logical.
+
+##### Convert to Date/Time Format
+- **issue_d**: Convert to date/time for chronological analysis.
+- **earliest_cr_line**: Convert to date/time to track the earliest credit history.
+- **last_pymnt_d**: Convert to date/time; create separate year and month columns.
+- **next_pymnt_d**: Convert to date/time; add year and month columns.
+- **last_credit_pull_d**: Convert to date/time for recent credit activity insights.
+- **sec_app_earliest_cr_line**: Convert to date/time for secondary applicants’ credit history.
+- **hardship_start_date**: Convert to date/time; add year and month columns.
+- **hardship_end_date**: Convert to date/time; add year and month columns.
+- **payment_plan_start_date**: Convert to date/time; add year and month columns.
+
+##### Remove Non-Analytical or Irrelevant Columns
+- **emp_title**: Not relevant for numerical analysis; remove.
+- **url**: Non-analytical; remove as it doesn’t contribute to analysis.
+
+##### Evaluate for Categorical Consistency
+- **zip_code**: Analyze the first few digits if relevant to extract location-based insights.
+
 
 #### 📉 Boolean Feature Analysis
 For Boolean columns, I examined the distribution of True/False values to ensure data completeness and balance.
