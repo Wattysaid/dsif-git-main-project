@@ -14,6 +14,7 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
   ---
 
 # 📂 Repository Structure - DSIF Main Project
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 Welcome to the DSIF Main Project repository. This structure provides an organised overview of the folders and files within the project. Use the hyperlinks to quickly navigate to specific sections and access the corresponding resources.
 
