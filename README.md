@@ -29,6 +29,7 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 ---
 
 ## 🎯 Project Objectives
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 1. **Data Cleaning and Preprocessing**: 
    - Handle missing values and inconsistent data types.
@@ -43,6 +44,7 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
    - Implement binary and multi-class classification using techniques like one-vs-one and one-vs-rest strategies.
 
 ## 🔄 Project Workflow
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 1. **Data Loading**:
    - Load the main loan dataset and data dictionary to understand feature meanings and relationships.
@@ -68,6 +70,7 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
    - Evaluate model performance using chosen metrics. Utilise SHAP (SHapley Additive exPlanations) values to interpret the impact of individual features on predictions, providing transparency and insights into model decisions.
 
 ## 🧠 Key Concepts Demonstrated
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 - **Data Cleaning**: Importance of preprocessing to ensure data quality.
 - **Feature Selection**: Methods to retain meaningful variables for modelling.
@@ -75,6 +78,7 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 - **Predictive Modelling**: Application of machine learning algorithms for classification tasks.
 
 ## 📋 Requirements
+[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing)
 
 - Python 3.12.6
 - Key libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
