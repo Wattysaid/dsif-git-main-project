@@ -59,7 +59,8 @@ We have identified the following columns that require conversion or encoding:
 ### 📉 Boolean Feature Analysis
 For Boolean columns, I examined the distribution of True/False values to ensure data completeness and balance.
 
-![Boolean Distribution Example](boolean_distribution.png)
+![image](https://github.com/user-attachments/assets/7c5dc3b3-04f6-4f1a-80e5-b678d5e272cd)
+![image](https://github.com/user-attachments/assets/9a34cab9-68c5-44d1-86c3-3633d0b52f1d)
 
 In the example above, `earliest_cr_line_missing_clean_kn` is fully populated with "False," indicating no missing values.
 
