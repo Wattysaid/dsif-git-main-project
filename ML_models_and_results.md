@@ -1,5 +1,17 @@
 # 📊 ELVTR Data Science Main Project Report
 
+## 📝 Model Evaluation and Challenges
+
+### Observations on Model Performance
+The **Gradient Boosting** model emerged as the top performer with a balanced F1-Score, high ROC-AUC, and strong cross-validation accuracy, indicating robustness across metrics. Logistic Regression and Decision Tree models also showed competitive performance, but the Decision Tree presented potential overfitting issues, evident from the lower ROC-AUC compared to other metrics.
+
+### Challenges Encountered
+1. **Data Leakage**: During feature engineering, care was taken to avoid including features that could directly reveal loan status. However, given the high recall scores in models like Random Forest, there is a risk of subtle data leakage from correlated variables. Addressing this may involve regular feature audits or further cross-validation techniques to assess model generalization.
+
+2. **Overfitting**: The Decision Tree model exhibited classic signs of overfitting, achieving high recall but comparatively lower ROC-AUC. Overfitting can often result from deep trees or excessive reliance on granular splits. To counter this, techniques like pruning or using ensemble methods like Gradient Boosting and Random Forest (with optimized depth) were explored, with Gradient Boosting showing better performance.
+
+3. **Model Complexity**: KNN and Naive Bayes models underperformed, suggesting that simpler models struggle with the dataset’s complexity. High-dimensional data and the nuances of loan risk assessment may require more sophisticated algorithms to capture intricate patterns.
+
 ## 🧠 Methodology, Approach, and Model Selection Rationale
 
 ### Model Selection Process
@@ -87,19 +99,6 @@ To predict loan default probability effectively, several classification models w
      ![image](https://github.com/user-attachments/assets/04b791f0-ecfb-459d-b7e5-86edb458400c)
      ![image](https://github.com/user-attachments/assets/0fa2d76e-7aa1-4702-83cb-9160d441e60d)
      ![image](https://github.com/user-attachments/assets/da3acf0e-a10f-4a1f-bed7-f30fecc2971f)
-
-
-## 📝 Model Evaluation and Challenges
-
-### Observations on Model Performance
-The **Gradient Boosting** model emerged as the top performer with a balanced F1-Score, high ROC-AUC, and strong cross-validation accuracy, indicating robustness across metrics. Logistic Regression and Decision Tree models also showed competitive performance, but the Decision Tree presented potential overfitting issues, evident from the lower ROC-AUC compared to other metrics.
-
-### Challenges Encountered
-1. **Data Leakage**: During feature engineering, care was taken to avoid including features that could directly reveal loan status. However, given the high recall scores in models like Random Forest, there is a risk of subtle data leakage from correlated variables. Addressing this may involve regular feature audits or further cross-validation techniques to assess model generalization.
-
-2. **Overfitting**: The Decision Tree model exhibited classic signs of overfitting, achieving high recall but comparatively lower ROC-AUC. Overfitting can often result from deep trees or excessive reliance on granular splits. To counter this, techniques like pruning or using ensemble methods like Gradient Boosting and Random Forest (with optimized depth) were explored, with Gradient Boosting showing better performance.
-
-3. **Model Complexity**: KNN and Naive Bayes models underperformed, suggesting that simpler models struggle with the dataset’s complexity. High-dimensional data and the nuances of loan risk assessment may require more sophisticated algorithms to capture intricate patterns.
 
 ## 🚀 Next Steps
 Based on this evaluation, the **Gradient Boosting** model will be further refined and tested as a primary candidate for deployment. Logistic Regression and Random Forest will be retained as simpler alternatives for comparison. Future work will involve hyperparameter tuning for Gradient Boosting, along with feature importance analysis to ensure interpretability and reduce potential data leakage.
