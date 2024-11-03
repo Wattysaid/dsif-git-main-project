@@ -1,5 +1,7 @@
 ## 🧠 Neural Network Challenger Model: Simple Architecture
 
+The results are misleading and there still seems to be data leakage and overfitting. Running out of time I'll tackle this over the next few days.
+
 ## 🧠 Neural Network Model Summary
 
 ### Objective
