@@ -11,6 +11,22 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 - [📊 DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)
 - [🔢 Key Lists for Data Processing](#key-lists-for-data-processing)
 
+  ---
+
+  # 📂 Repository Structure - DSIF Main Project
+
+Welcome to the DSIF Main Project repository. This structure provides an organised overview of the folders and files within the project. Use the hyperlinks to quickly navigate to specific sections and access the corresponding resources.
+
+## 🔗 Table of Contents
+- [📁 Notebooks](#notebooks)
+- [📁 Models](#models)
+- [📁 Data](#data)
+- [📁 Results](#results)
+- [📁 Documentation](#documentation)
+- [📁 Scripts](#scripts)
+
+---
+
 ## 🎯 Project Objectives
 
 1. **Data Cleaning and Preprocessing**: 
@@ -50,7 +66,6 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
    - Train various machine learning models, including traditional algorithms and neural networks, to classify loan statuses.
    - Evaluate model performance using chosen metrics. Utilise SHAP (SHapley Additive exPlanations) values to interpret the impact of individual features on predictions, providing transparency and insights into model decisions.
 
-
 ## 🧠 Key Concepts Demonstrated
 
 - **Data Cleaning**: Importance of preprocessing to ensure data quality.
@@ -67,6 +82,8 @@ Install dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
 
 # 📊 Lending Club Loan Analysis - DataFrame Sequence and Processing Overview
 
@@ -136,6 +153,8 @@ The `Y` DataFrame holds the target variable for the model, representing the loan
 
 ### Additional DataFrames for Analysis 🛠️
 Throughout the notebook, various temporary DataFrames may be created for specific tasks such as feature selection (`selected_features`), visualisation, or detailed analysis (`datetime_headers`, `missing_cols`). These are utilised and refined as needed to finalise the data for modelling.
+
+---
 
 # 🔢 Key Lists for Data Processing
 
