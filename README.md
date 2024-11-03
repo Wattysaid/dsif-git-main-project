@@ -75,7 +75,7 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 
 ## 📋 Requirements
 
-- Python 3.13.0
+- Python 3.12.6
 - Key libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
 
 Install dependencies with:
