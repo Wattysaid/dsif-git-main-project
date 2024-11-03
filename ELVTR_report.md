@@ -14,35 +14,55 @@
 
 ## 🧠 Methodology, Approach, and Model Selection Rationale
 
-The aim of this project was to a loan application predictive model for Lending Club by analysing 100k client loan data to predict loan repayment likelyhood of loan defaults.
+The aim of this project was to create a loan application scoring model leveraging predictive modelling for the Lending Club. To do this I analysed a data set of 100k client loans covering Active, In Progress, Defaulted and late loans. This resulted in a trained ML model that predicted with over 87% accuracy.
 
-The approach included these key stages:
+1. **Data Cleaning and Preprocessing**: Missing values were handled, categorical variables encoded, and numerical variables normalized. Columns with low variance were removed, and outliers adjusted to enhance model performance. This proved to be the most time consuming part of the assignment with a lot of reasearch and additional reading going on in the background.
+2. **Exploratory Data Analysis (EDA)**: Here I analysed feature correlations and distributions to gain insights into key factors that could possible predict or influence a postive or negative loan status outcome. Features were filtered following a pre hardship grouping. The entire pre hardship feature list was split into three seperate lists for a deeper analysis. This led to several changes i.e. simplifying categorical data into new groupings, removal of data with no variation i.e. unique columns (`id`), etc.
+3. **Feature Engineering**: New features were introduced to simplify the collected data. This was completed either via grouping or the combination of multiple data points, this enriched the dataset and improved the ML models predictive accuracy albeit we still have data leakage and overfitted outputs. The search is will continue.
+4. **Model Selection**: Various models, such as Logistic Regression, Decision Trees, and Random Forest, were evaluated. Random Forest was chosen for its balance of accuracy, interpretability, and robustness. I shuffled model parameters to determine their impact on the final scores. Balancing accuracty, precision and recall proved to be tricky with initial models scoring above a realistic value i.e. 99%.
 
-1. **Data Cleaning and Preprocessing**: 🧹 Missing values were handled, categorical variables encoded, and numerical variables normalized. Columns with low variance were removed, and outliers adjusted to enhance model performance.
-2. **Exploratory Data Analysis (EDA)**: 🔍 Analyzed feature correlations and distributions to gain insights into key factors influencing loan status. Filtered features and identified meaningful trends.
-3. **Feature Engineering**: 🛠 New features were derived either via grouping or the combination of multiple data points, this enriched the dataset and improved the ML models predictive accuracy albeit.
-4. **Model Selection**: 🎯 Various models, such as Logistic Regression, Decision Trees, and Random Forest, were evaluated. Random Forest was chosen for its balance of accuracy, interpretability, and robustness.
+### 🔍 Rationale for Model Selection of our baseline model
+I decided to proceed with the two models in particular. These were the Gradient Boosting and Logistic Regression. Both performed well when ran against our transformed data.
 
-### 🔍 Rationale for Model Selection
-Random Forest was selected due to its ability to handle complex relationships and reduce overfitting risks, as it combines the predictions of multiple decision trees.
+was selected due to its ability to handle complex relationships and reduce overfitting risks, as it combines the predictions of multiple decision trees.
 
-## ✅ Advantages and ⚠️ Limitations of the Chosen Model
+## ✅ Advantages and ⚠️ Limitations of our baseline model 
 
-### ✅ Advantages
-- **High Accuracy and Robustness**: Random Forest provideded strong predictive power with a lower risk of overfitting. This said we still have some work ahead of us to remove overfitting entirely.
-- **Versatility**: It handles both numerical and categorical data well, with less sensitivity to scaling or normalisation. A caveat here is that during this assignment my feature selection shifted from 102 from the original set, to over 3k with one hot encoding, and back down to 23 features after VIF removal and RFE. I ended up using binary encoding for the categorical variables.
+(a lot of the model comparaison is from O'Reilly books or shamlessly googled)
 
-### ⚠️ Limitations
-- **Computational Cost**: Training and inference was time consuming, neural networks feature reduction excercises along with SHAP tested my laptop. SHAP was executed with 1000 features only.
-- **Complexity in Tuning**: Optimal performance requires intensive hyperparameter tuning.
-- **Real-Time Suitability**: Random Forest may not be ideal for real-time applications without optimizations.
+#### 1. Gradient Boosting
+
+**✅ Advantages**:
+   - **High Accuracy**: Gradient Boosting achieves high accuracy and ROC-AUC, suggesting strong overall predictive capability.
+   - **Effective at Capturing Defaults**: The model has a high recall (0.9972), meaning it successfully identifies most default cases. Not blind to these results they change later after fine tuning.
+   - **Handles Complex Patterns**: Gradient Boosting is effective at learning complex relationships, which can improve prediction performance in cases with intricate data patterns this seemed to be the appropriate choice given the results but also the volume of data I passed through the model.
+
+**⚠️ Limitations**:
+   - **Computationally Intensive**: Training Gradient Boosting models can be time-consuming and requires more computational resources, especially on large datasets. (MSFT surface...)
+   - **Overfitting**: Our Gradient Boosting is overfit and something we'll fine tune in the second run (e.g., too many trees or too high learning rate).
+   - **Less Interpretable**: The model’s complexity can make it challenging to interpret results, which might be a limitation when explaining predictions to stakeholders. (shamlessly googled)
+
+#### 2. Logistic Regression
+
+**✅ Advantages**:
+   - **Interpretable**: Logistic Regression is easier to interpret, with coefficients directly indicating feature importance, which can help explain default risk factors. (shamlessly googled)
+   - **Computationally Efficient**: Logistic Regression is relatively fast to train and requires fewer resources, making it suitable for large datasets and real-time applications.
+   - **High Recall**: The model has a high recall (0.9890), indicating effective identification of defaults and a reliable capture of risk cases.
+
+**⚠️ Limitations**:
+   - **Limited to Linear Relationships**: Logistic Regression may struggle with complex patterns if the data relationships are highly nonlinear.
+   - **Lower Flexibility**: Compared to models like Gradient Boosting, Logistic Regression is less flexible and may not perform as well on datasets with complex, nonlinear relationships. (shamlessly googled)
+   - **Lower Recall and F1-Score than Gradient Boosting**: Although the recall and F1-score are high, they’re slightly lower than Gradient Boosting, meaning it may miss a few more default cases.
+
+### 🔍 Rationale for Model Selection of our baseline model
+
 
 ## 🏗️ Architecture of the Final Solution
 
-The final solution consists of a multi-stage pipeline:
+The final solution consists of a multi-stage pipeline (I sacrificed the application building to focus on teh 40pts project):
 
-1. **Data Ingestion and Preprocessing**: 📥 Data is loaded, cleaned, and preprocessed with feature encoding, standardization, and normalization.
-2. **Feature Engineering and Selection**: 🔨 Relevant features are selected and engineered to improve predictive accuracy.
+1. **Data Ingestion and Preprocessing**: 📥 Data is loaded, cleaned, and preprocessed with feature encoding, standardisation, and normalisation.
+2. **Feature Engineering and Selection**: 🔨 Relevant features are selected and some created and fed into the model.
 3. **Model Training**: 🎓 The Random Forest classifier is trained with optimized hyperparameters through cross-validation.
 4. **Prediction Pipeline**: 🔮 For new data, the model processes inputs and outputs the probability of loan default or approval.
 5. **Optional Real-Time Scoring Component**: 🕰️ An API framework for batch scoring, with potential for real-time scoring through API endpoints.
