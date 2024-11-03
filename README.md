@@ -3,12 +3,20 @@
 This project is part of the ELVTR Data Science course, designed to demonstrate the application of data science skills in a financial context. The primary goal is to analyse and model a dataset of loan applications to predict loan approval statuses.
 
 ## 🔗 Outline
-- [Project Objectives](#project-objectives)
-- [Project Workflow](#project-workflow)
-- [Key Concepts Demonstrated](#key-concepts-demonstrated)
-- [Requirements](#requirements)
-- [DataFrame Sequence and Processing Overview](#dataframe-sequence-and-processing-overview)
+- [📊 Lending Club Loan Analysis - ELVTR Data Science Course Project](#-lending-club-loan-analysis---elvtr-data-science-course-project)
+- [🎯 Project Objectives](#-project-objectives)
+- [🔄 Project Workflow](#-project-workflow)
+- [🧠 Key Concepts Demonstrated](#-key-concepts-demonstrated)
+- [📋 Requirements](#-requirements)
+- [📊 Lending Club Loan Analysis - DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview)
+- [DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)
 - [Summary](#summary)
+- [Key Lists for Data Processing](#key-lists-for-data-processing)
+- [Feature Lists](#feature-lists)
+- [`boolean_list` - Boolean Variables](#boolean_list---boolean-variables)
+- [`numerical_list` - Numerical Variables](#numerical_list---numerical-variables)
+- [`categorical_list` - Categorical Variables](#categorical_list---categorical-variables)
+- [`new_features` - Engineered and Derived Features](#new_features---engineered-and-derived-features)
 
 ## 🎯 Project Objectives
 
