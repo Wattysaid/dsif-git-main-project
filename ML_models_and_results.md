@@ -1,12 +1,16 @@
 # 📊 ELVTR Data Science Main Project Report
 
+## Summary
+
+Data leakage proved to be the most challenging aspect of this exercise. I used correlation analysis, VIF, and RFE to carefully reduce the feature set while preserving predictive accuracy. Categorical encoding also presented issues; after testing several approaches, I opted for binary encoding. One-hot encoding, while considered, generated over 3,000 features, leading the model to identify false patterns and ultimately reducing effectiveness.
+
 ## 📝 Model Evaluation and Challenges
 
 ### Observations on Model Performance
 The **Gradient Boosting** model emerged as the top performer with a balanced F1-Score, high ROC-AUC, and strong cross-validation accuracy, indicating robustness across metrics. Logistic Regression and Decision Tree models also showed competitive performance, but the Decision Tree presented potential overfitting issues, evident from the lower ROC-AUC compared to other metrics.
 
 ### Challenges Encountered
-1. **Data Leakage**: During feature engineering, care was taken to avoid including features that could directly reveal loan status. However, given the high recall scores in models like Random Forest, there is a risk of subtle data leakage from correlated variables. Addressing this may involve regular feature audits or further cross-validation techniques to assess model generalization.
+1. **Data Leakage**: During feature engineering, I tried to avoid including features that could directly reveal loan status. This proved to be tricky and I have had to result to manual removal of the target varible post transformation and training of the data. However, given the high recall scores in models like Random Forest, there is a risk of subtle data leakage from correlated variables. We identify this in the challanger model and reduce the feautre set using RFE which brought us back to better scoring.
 
 2. **Overfitting**: The Decision Tree model exhibited classic signs of overfitting, achieving high recall but comparatively lower ROC-AUC. Overfitting can often result from deep trees or excessive reliance on granular splits. To counter this, techniques like pruning or using ensemble methods like Gradient Boosting and Random Forest (with optimized depth) were explored, with Gradient Boosting showing better performance.
 
