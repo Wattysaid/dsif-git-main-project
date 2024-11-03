@@ -29,7 +29,7 @@ The results of the RFE excercise are captured below. Before getting to these res
 
 ### 🔄 Features in Pre-Hardship Fields
 
-The following RFE-selected features are also part of the pre-hardship fields, meaning they capture borrower data available prior to any hardship events:
+The RFE-selected features are also part of the pre-hardship fields, meaning they capture borrower data available prior to any hardship event:
 
 - `annual_inc`
 - `bc_open_to_buy`
@@ -50,13 +50,11 @@ The following RFE-selected features are also part of the pre-hardship fields, me
 - `total_rec_late_fee`
 - `total_rec_prncp`
 
-## 📋 Overview
-
-To effectively build a model for predicting loan defaults, I first reviewed the data dictionary and organised features into logical groups based on their financial and behavioural relevance. This grouping was essential for gaining insights into various feature categories, ensuring a structured approach for feature engineering and selection.
-
 ## 🗂️ Feature Groups
 
-Using domain knowledge and insights from the Lending Club dataset, I categorised the features into groups. This structured classification laid the foundation for targeted feature selection, particularly for post-ML analysis. These groups include:
+Below are the categorised the featuress. This structured classification laid the foundation for targeted feature selection, particularly for pre-ML analysis. 
+
+These groups include:
 
 - **Credit History**: Tracks historical credit behaviour, including credit line age and FICO scores.
   - *Examples*: `earliest_cr_line`, `fico_range_high`, `mo_sin_old_il_acct`
@@ -82,11 +80,11 @@ Using domain knowledge and insights from the Lending Club dataset, I categorised
 - **Loan Performance**: Tracks the performance of the loan, including payment history.
   - *Examples*: `total_pymnt`, `total_rec_int`, `recoveries`
 
-These groupings allowed me to systematically explore feature importance within each category and evaluate their relevance to loan default predictions.
+These groupings allowed me to explore feature importance within each category and evaluate their relevance (subjectively) to loan default predictions.
 
 ## ⚙️ Pre- and Post-Hardship Fields
 
-After reviewing the feature groups, I divided features further into two main sets based on their relation to hardship status:
+Below are the two main sets based on their relation to hardship status:
 
 - **Pre-Hardship Fields**: These features capture information available at loan origination or during regular servicing, before any hardship events.
   - *Examples*: `acc_now_delinq`, `annual_inc`, `fico_range_high`, `loan_amnt`
@@ -98,7 +96,7 @@ I selected the pre-hardship fields as the initial draft feature set to avoid bia
 
 ## 🔄 Recursive Feature Elimination (RFE)
 
-To further refine feature selection, I applied Recursive Feature Elimination (RFE). This technique helped to systematically reduce the feature set while retaining predictive power by iteratively removing the least impactful features. My goal was to simplify the model and minimise the risk of data leakage by ensuring each feature contributed meaningfully to loan default predictions.
+I applied Recursive Feature Elimination (RFE). This technique helped to systematically reduce the feature set while retaining predictive power by iteratively removing the least impactful features. My goal was to simplify the model and minimise the risk of data leakage by ensuring each feature contributed meaningfully to loan default predictions. Although this proved an effective approach there is still continuied data leakage and overfitting.
 
 ### 📑 Final Selected Features
 
@@ -130,6 +128,4 @@ After running RFE, the following features were selected, capturing key aspects o
 
 ---
 
-These selected features provide a comprehensive view of the borrower’s financial behaviour and loan performance, making them highly valuable for the predictive model. By focusing on pre-hardship features, I aimed to avoid data leakage and ensure that the model captures patterns relevant to default risk assessment.
-
-These RFE-selected features offer a well-rounded view of borrower behaviour and financial capacity, while avoiding excessive complexity. With these features, the model is equipped to identify default risks effectively while remaining interpretable and robust.
+By focusing on pre-hardship features, I tried to improve ML model results and avoid as much data leakage and overfitting as possible.
