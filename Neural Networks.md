@@ -1,5 +1,41 @@
 ## 🧠 Neural Network Challenger Model: Simple Architecture
 
+## 🧠 Neural Network Model Summary
+
+### Objective
+The goal of this neural network exercise was to test various architectures and regularisation techniques to identify an optimal model for predicting loan defaults. I experimented with three primary configurations: basic neural networks, dropout with early stopping, and L2 regularisation. 
+
+### Model Configurations Tested
+
+1. **Basic Neural Networks (Model1a, Model1b, Model1c)**:
+   - These models had straightforward architectures with layers and neurons but without additional regularisation.
+   - Achieved high accuracy and AUC, performing well across metrics.
+
+2. **Dropout with Early Stopping (Model2a - Model2e)**:
+   - Dropout layers were used to prevent overfitting by randomly deactivating neurons during training.
+   - Early stopping was implemented to halt training when validation performance plateaued.
+   - This configuration consistently achieved high performance, with an AUC of 0.99 across all dropout models.
+
+3. **L2 Regularisation (Model3a, Model3b)**:
+   - L2 regularisation penalised large weights, further controlling overfitting.
+   - This approach demonstrated strong generalisation, achieving an AUC of 0.98-0.99.
+
+### Performance Overview
+
+- **Accuracy**: All models, including those with dropout and L2 regularisation, maintained high accuracy scores around 0.98-0.99.
+- **Precision**: Models consistently achieved precision of 0.97-0.99, indicating high accuracy in correctly predicting defaults.
+- **Recall**: All models had a recall of 1.00, ensuring that they effectively captured all positive (default) cases.
+- **AUC**: Most models achieved an AUC of 0.99, with only a slight decrease in the L2 regularisation models, which maintained an AUC of 0.98-0.99.
+
+### ROC Curve Analysis
+
+The ROC curve plot shows near-perfect separation, with all models achieving a high true positive rate across a low false positive rate. This curve underscores the models' strong performance in distinguishing between loan default and non-default cases. Each model's AUC score reinforces this, as most hover at 0.99, demonstrating excellent predictive capability.
+
+### Conclusion
+
+The neural network exercise successfully identified several high-performing configurations. Both dropout with early stopping and L2 regularisation effectively controlled overfitting, with dropout models slightly outperforming in terms of AUC. Given their robust performance, any of these configurations could be considered for deployment, with the final choice potentially depending on computational efficiency and specific deployment needs.
+
+
 For this neural network experiment, I opted for a simpler model architecture to evaluate whether a more streamlined network could achieve comparable performance. This model acts as a challenger by testing if fewer layers and neurons can still capture the predictive patterns in our data with high accuracy.
 
 ### Model Architecture
