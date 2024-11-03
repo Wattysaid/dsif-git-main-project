@@ -68,7 +68,10 @@ In the example above, `earliest_cr_line_missing_clean_kn` is fully populated wit
 ### 📐 Numeric Feature Distribution and Outliers
 Numeric features like `acc_now_delinq` were analysed using histograms and box plots to understand value distribution and detect outliers.
 
-![image](https://github.com/user-attachments/assets/f5a586ce-0832-42a3-9118-92963bc7a1cc) ![image](https://github.com/user-attachments/assets/8113f281-e091-419b-b297-9556f05b74f6)
+![image](https://github.com/user-attachments/assets/f5a586ce-0832-42a3-9118-92963bc7a1cc) 
+
+![image](https://github.com/user-attachments/assets/8113f281-e091-419b-b297-9556f05b74f6)
+
 ![image](https://github.com/user-attachments/assets/0b965168-581c-4908-99f8-e3d249857c0c)
 
 The histogram shows the skewed distribution of `acc_now_delinq`, while the box plot identifies extreme values as outliers.
