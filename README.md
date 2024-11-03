@@ -26,6 +26,20 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 - [📁 Scripts](#scripts)
 
 ---
+| **Project Outline**                                                                                                       | **Repository Structure**                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| ## 🔗 Outline                                                                                                             | # 📂 Repository Structure - DSIF Main Project                                                                            |
+| - [📊 Lending Club Loan Analysis - ELVTR Data Science Course Project](#-lending-club-loan-analysis---elvtr-data-science-course-project) | Welcome to the DSIF Main Project repository. This structure provides an organised overview of the folders and files within the project. Use the hyperlinks to quickly navigate to specific sections and access the corresponding resources. |
+| - [🎯 Project Objectives](#-project-objectives)                                                                           |                                                                                                                          |
+| - [🔄 Project Workflow](#-project-workflow)                                                                               | ## 🔗 Table of Contents                                                                                                  |
+| - [🧠 Key Concepts Demonstrated](#-key-concepts-demonstrated)                                                             | - [📁 Notebooks](#notebooks)                                                                                             |
+| - [📋 Requirements](#-requirements)                                                                                       | - [📁 Models](#models)                                                                                                   |
+| - [📊 DataFrames and Their Processing Sequence](#dataframes-and-their-processing-sequence)                                | - [📁 Data](#data)                                                                                                       |
+| - [🔢 Key Lists for Data Processing](#key-lists-for-data-processing)                                                      | - [📁 Results](#results)                                                                                                 |
+|                                                                                                                           | - [📁 Documentation](#documentation)                                                                                     |
+|                                                                                                                           | - [📁 Scripts](#scripts)                                                                                                 |
+
+---
 
 ## 🎯 Project Objectives
 
