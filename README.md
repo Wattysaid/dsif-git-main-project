@@ -48,10 +48,11 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 Install dependencies with:
 ```bash
 pip install -r requirements.txt
+```
 
 # Lending Club Loan Analysis - DataFrame Sequence and Processing Overview
 
-This document outlines the sequence of DataFrames used throughout the analysis and the key transformations applied to each. This high-level overview highlights the logical flow from raw data to final model preparation, showcasing data cleaning, feature engineering, and transformations.
+Here we'll explore at a high level the sequence of DataFrames used throughout the analysis and the key transformations applied to each. This high-level overview highlights the logical flow from raw data to final model preparation, showcasing data cleaning, feature engineering, and transformations.
 
 ## DataFrames and Their Processing Sequence
 
@@ -115,6 +116,3 @@ Throughout the notebook, various temporary DataFrames may be created for specifi
 ## Summary
 
 This project involves a series of transformations and analyses to prepare the loan data for predictive modelling. Each DataFrame builds on previous steps, ensuring a thorough and logical progression from raw data to fully prepared training and testing sets. These processing steps enable robust feature selection, handling of missing values, encoding, and scaling, laying the groundwork for a reliable model to predict loan approval statuses.
-
-This structure illustrates the comprehensive data science approach followed in this project, demonstrating key skills in data preparation, feature engineering, and analysis.
-
