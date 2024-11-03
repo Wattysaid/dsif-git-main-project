@@ -19,7 +19,7 @@ The **Gradient Boosting** model emerged as the top performer with a balanced F1-
 ## 🧠 Methodology, Approach, and Model Selection Rationale
 
 ### Model Selection Process
-To predict loan default probability effectively, several classification models were evaluated as baselines, including Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, K-Nearest Neighbors (KNN), and Naive Bayes. Each model was tested on various performance metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Cross-Validation Mean Accuracy, as well as evaluated for potential issues like overfitting and data leakage.
+To predict loan default probability effectively, several classification models were evaluated as baselines, including Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, K-Nearest Neighbors (KNN), and Naive Bayes. Each model was tested on the following performance metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Cross-Validation Mean Accuracy, as well as evaluated for potential issues like overfitting and data leakage.
 
 ### Baseline Model Performance Summary
 
