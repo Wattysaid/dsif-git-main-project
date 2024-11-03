@@ -1,8 +1,16 @@
-# Lending Club Loan Analysis - ELVTR Data Science Course Project
+# 📊 Lending Club Loan Analysis - ELVTR Data Science Course Project
 
 This project is part of the ELVTR Data Science course, designed to demonstrate the application of data science skills in a financial context. The primary goal is to analyse and model a dataset of loan applications to predict loan approval statuses.
 
-## Project Objectives
+## 🔗 Outline
+- [Project Objectives](#project-objectives)
+- [Project Workflow](#project-workflow)
+- [Key Concepts Demonstrated](#key-concepts-demonstrated)
+- [Requirements](#requirements)
+- [DataFrame Sequence and Processing Overview](#dataframe-sequence-and-processing-overview)
+- [Summary](#summary)
+
+## 🎯 Project Objectives
 
 1. **Data Cleaning and Preprocessing**: 
    - Handle missing values and inconsistent data types.
@@ -16,7 +24,7 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
    - Train and evaluate a predictive model for loan status classification.
    - Implement binary and multi-class classification using techniques like one-vs-one and one-vs-rest strategies.
 
-## Project Workflow
+## 🔄 Project Workflow
 
 1. **Data Loading**:
    - Load the main loan dataset and data dictionary to understand feature meanings and relationships.
@@ -33,14 +41,14 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
    - Prepare data for modelling with selected features.
    - Implement and evaluate models based on chosen evaluation metrics.
 
-## Key Concepts Demonstrated
+## 🧠 Key Concepts Demonstrated
 
 - **Data Cleaning**: Importance of preprocessing to ensure data quality.
 - **Feature Selection**: Methods to retain meaningful variables for modelling.
 - **Exploratory Analysis**: Using visualisations to understand trends.
 - **Predictive Modelling**: Application of machine learning algorithms for classification tasks.
 
-## Requirements
+## 📋 Requirements
 
 - Python 3.13.0
 - Key libraries: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `seaborn`
@@ -48,7 +56,7 @@ This project is part of the ELVTR Data Science course, designed to demonstrate t
 Install dependencies with:
 ```bash
 pip install -r requirements.txt
-```
+
 
 # Lending Club Loan Analysis - DataFrame Sequence and Processing Overview
 
