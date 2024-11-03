@@ -16,6 +16,9 @@ To predict loan default probability effectively, several classification models w
    - **Cross-Validation Mean Accuracy**: 95.04%
    - **Confusion Matrix**: Significant false positives, suggesting potential areas for improvement in feature handling.
 
+  ![image](https://github.com/user-attachments/assets/841f6e24-2e42-4708-b484-05d4adbefe86) ![image](https://github.com/user-attachments/assets/e8e4fe41-0521-402f-89d3-b97ce9d6da90)
+  [image](https://github.com/user-attachments/assets/a524526d-4950-4d8f-bbc6-e29c062a88a1)
+
 2. **Decision Tree**
    - **Accuracy**: 95.34%
    - **Precision**: 97.60%
