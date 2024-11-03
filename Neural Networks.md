@@ -214,5 +214,101 @@ The inclusion of Batch Normalization with Dropout resulted in a well-performing 
 
 ![image](https://github.com/user-attachments/assets/584bb647-ccc5-48e9-9935-6e9cc050ab91)
 
+## 🧠 Neural Network Challenger Model with Light Dropout
+
+In this model, I applied a lighter dropout rate of 20% to evaluate whether reduced regularisation could still provide strong generalisation while allowing for faster convergence. This model aims to maintain a balance between performance and efficiency, with fewer dropout layers than previous models.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 32 neurons and ReLU activation.
+  - **Dropout**: 20% dropout rate for moderate regularisation.
+- **Layer 2**: Dense layer with 16 neurons and ReLU activation.
+  - **Dropout**: 20% dropout rate to control overfitting.
+- **Layer 3**: Dense layer with 8 neurons and ReLU activation, without additional dropout to allow full activation.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, producing a probability for loan default prediction.
+
+### Training and Validation Results
+
+- **Training Accuracy**: The model reached a final training accuracy of **98.25%**.
+- **Validation Accuracy**: The validation accuracy stabilised around **98.30%** with minimal signs of overfitting.
+- **Validation Loss**: Low validation loss indicates that the model generalises well without substantial degradation.
+
+### Training Curve Analysis
+
+The training and validation accuracy curves are closely aligned, showing minimal divergence throughout the epochs, which suggests that the light dropout rate successfully controlled overfitting. Both metrics converged early due to the early stopping mechanism, highlighting stable performance across epochs.
+
+### Conclusion
+
+With a 20% dropout rate, this model achieved high accuracy and maintained effective generalisation. The lighter dropout rate balanced regularisation with efficient learning, making this model a practical choice for deployment scenarios where computational efficiency is important.
+
+![image](https://github.com/user-attachments/assets/f9dfd2b4-7565-44cf-8f00-6df03000175b)
+
+## 🧠 Neural Network Challenger Model with L2 Regularization
+
+This model applies L2 regularisation to each dense layer to penalise large weights and improve generalisation. L2 regularisation helps reduce overfitting by keeping the model parameters in check, leading to better stability in performance.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 16 neurons and ReLU activation.
+  - **L2 Regularization**: Applied with a regularisation factor of 0.01.
+- **Layer 2**: Dense layer with 8 neurons and ReLU activation.
+  - **L2 Regularization**: Also applied with a factor of 0.01.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, outputting a probability score for loan default prediction.
+
+### Training and Validation Results
+
+- **Training Accuracy**: Reached **97.39%** by the final epoch.
+- **Validation Accuracy**: Stabilised at **97.55%**, closely tracking the training accuracy.
+- **AUC**: Achieved an AUC of **0.9833**, indicating strong capability in distinguishing between classes.
+- **Precision**: High precision at **0.9737**, ensuring accurate identification of defaults.
+- **Recall**: Very high recall of **0.9986**, capturing nearly all default cases.
+- **Validation Loss**: Final validation loss of **0.1217**, indicating good model fit with minimal overfitting.
+
+### Training Curve Analysis
+
+The training and validation accuracy curves are well-aligned, showing that the L2 regularisation was effective in controlling overfitting. Both accuracies improved steadily and converged smoothly, indicating that the model learned effectively without memorising the training data.
+
+### Conclusion
+
+This model with L2 regularisation demonstrated high accuracy, AUC, precision, and recall, making it a strong candidate for production use. The close alignment of training and validation performance underscores its generalisation ability, providing reliable predictions on unseen data.
+
+![image](https://github.com/user-attachments/assets/c0bd0481-f8e8-47b1-b314-a7bf6eaeb983)
+
+## 🧠 Neural Network Challenger Model with L2 Regularization and Dropout
+
+In this model, I combined L2 regularisation with dropout to control overfitting and improve generalisation. L2 regularisation penalises large weights, while dropout randomly deactivates neurons during training to prevent the model from relying too heavily on any single neuron.
+
+### Model Architecture
+
+- **Layer 1**: Dense layer with 64 neurons and ReLU activation.
+  - **L2 Regularization**: Applied with a regularisation factor of 0.001.
+  - **Dropout**: 30% dropout rate to prevent overfitting.
+- **Layer 2**: Dense layer with 32 neurons and ReLU activation.
+  - **L2 Regularization**: Applied with a regularisation factor of 0.001.
+  - **Dropout**: 30% dropout rate to maintain regularisation.
+- **Layer 3**: Dense layer with 16 neurons and ReLU activation.
+  - **L2 Regularization**: Applied with a regularisation factor of 0.001.
+  - **Dropout**: 30% dropout rate to ensure robustness.
+- **Output Layer**: Dense layer with 1 neuron and sigmoid activation, producing a probability score for loan default prediction.
+
+### Training and Validation Results
+
+- **Training Accuracy**: Reached **97.52%** by the final epoch.
+- **Validation Accuracy**: Stabilised at **98.08%**, demonstrating strong generalisation.
+- **AUC**: Achieved an AUC of **0.9783**, showing effective class separation.
+- **Precision**: High precision at **0.9786**, indicating accurate identification of defaults.
+- **Recall**: High recall at **0.9935**, ensuring most default cases were captured.
+- **Validation Loss**: Final validation loss of **0.0956**, indicating a good fit with minimal overfitting.
+
+### Training Curve Analysis
+
+The training and validation curves display a stable progression, with minimal divergence. The combination of L2 regularisation and dropout was effective in controlling overfitting, as evidenced by the close alignment of training and validation accuracy. Both accuracies converged early, with the validation curve slightly outperforming the training curve, highlighting the model’s strong generalisation.
+
+### Conclusion
+
+The combination of L2 regularisation and dropout allowed this model to achieve high accuracy, AUC, precision, and recall. The stability and strong performance on validation data make it a robust candidate for deployment, especially in scenarios where overfitting control is critical.
+
+
+![image](https://github.com/user-attachments/assets/b56241f4-7161-4cff-a0af-b5da7df728cd)
 
 
