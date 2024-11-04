@@ -1,17 +1,47 @@
-black
-flake8
-ipython
-isort
-jupyterlab
-loguru
-matplotlib
-mkdocs
-notebook
-numpy
-pandas
-pip
-python-dotenv
-scikit-learn
-tqdm
-typer
--e .
+# Data Manipulation and Analysis
+pandas                  # Data manipulation and analysis library, essential for working with DataFrames
+
+# Statistical Analysis
+scipy                   # Scientific computing, includes statistical functions
+statsmodels             # For statistical models and hypothesis testing, including variance inflation factor (VIF)
+
+# Visualization
+matplotlib              # Basic plotting library for data visualization
+seaborn                 # Statistical data visualization built on top of matplotlib
+plotly                  # Interactive plotting library for complex visualizations
+missingno               # Visualization tool for exploring missing data patterns
+
+# Machine Learning - Core Libraries
+scikit-learn            # Essential ML library, includes models, preprocessing, evaluation, and selection utilities
+category-encoders       # Encoding categorical variables, includes TargetEncoder
+imbalanced-learn        # Handling imbalanced datasets with techniques like SMOTE
+
+# Machine Learning - External Libraries
+xgboost                 # High-performance gradient boosting library, widely used in structured data
+lightgbm                # Gradient boosting framework for fast and accurate models
+catboost                # Gradient boosting library that handles categorical data automatically
+
+# Deep Learning
+tensorflow              # Deep learning framework, includes layers, callbacks, and neural network tools
+
+# Jupyter Notebook Support
+ipywidgets              # Widgets for Jupyter notebooks, enhances interactivity
+ipython                 # For additional functionality within Jupyter, especially for display utilities
+notebook                # Core dependency for Jupyter notebooks, to run and manage notebooks
+jupyterlab              # Enhanced Jupyter environment, optional but useful for richer interface
+
+# Data Preprocessing
+tqdm                    # Progress bar library, useful for tracking loop or iteration progress
+python-dotenv           # Manage environment variables in a `.env` file
+TargetEncoder           # Encoder from category-encoders library, useful for target-based encoding
+
+# Model Evaluation and Metrics
+shap                    # SHAP (SHapley Additive exPlanations) for model interpretability
+dsif6utility            # Custom model evaluation utility, assumed to be specific to your project (ensure it’s accessible)
+pip                     # Python package installer, commonly included for ensuring install compatibility
+
+# Documentation and Miscellaneous
+mkdocs                  # Static site generator, useful for documentation creation
+typer                   # CLI tool, helps build command-line interfaces in Python
+
+-e .                    # Editable install for a local package (use only if developing custom modules in the environment)
