@@ -39,7 +39,9 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 - [📁 Documentation](#documentation)
 - [📁 Scripts](#scripts)
 
----
+
+![image](https://github.com/user-attachments/assets/5642d472-eb07-43b5-a586-6900a9448795)
+
 
 ## 🎯 Project Objectives
 [Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing) | [ELVTR Report](#-ELVTR-Data-Science-Main-Project-Report)
