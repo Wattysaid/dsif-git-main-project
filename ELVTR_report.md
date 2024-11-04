@@ -68,9 +68,9 @@ The final solution consists of a multi-stage pipeline (I sacrificed the applicat
 4. **Prediction Pipeline**: For new data, the model processes inputs and outputs the probability of loan default or approval.
 5. **Optional Real-Time Scoring Component**: An API framework for batch scoring, with potential for real-time scoring through API endpoints.
 
-## 🚀 Deployment and Scalability Considerations
+## 🚀 Deployment and Scalability Considerations (theory...)
 
-For business-as-usual (BAU) use, I've looked at the deployment and scalability (theory):
+For business-as-usual (BAU) use, I've looked at the deployment and scalability:
 
 - **Batch Prediction Pipeline**: Designed to handle high volumes efficiently in batch mode.
 - **Cloud Hosting and Integration**: Deployment options (e.g., AWS or GCP) to leverage scalable cloud resources.
