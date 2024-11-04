@@ -62,20 +62,20 @@ was selected due to its ability to handle complex relationships and reduce overf
 
 The final solution consists of a multi-stage pipeline (I sacrificed the application building to focus on the 40pts project, but might have this in place by the time you guys get to reviewing the assignment):
 
-1. **Data Ingestion and Preprocessing**: 📥 Data is loaded, cleaned, and preprocessed with feature encoding, standardisation, and normalisation.
-2. **Feature Engineering and Selection**: 🔨 Relevant features are selected and some created and fed into the model.
-3. **Model Training**: 🎓 The Random Forest classifier is trained with optimized hyperparameters through cross-validation.
-4. **Prediction Pipeline**: 🔮 For new data, the model processes inputs and outputs the probability of loan default or approval.
-5. **Optional Real-Time Scoring Component**: 🕰️ An API framework for batch scoring, with potential for real-time scoring through API endpoints.
+1. **Data Ingestion and Preprocessing**: Data is loaded, cleaned, and an initial selection list created `new_features`.
+2. **Feature Engineering and Selection**: Relevant `new_features`, new features created, removed, and grouped.
+3. **Model Training**: The Random Forest (second ML run after SMOTE) classifier is trained with optimized hyperparameters through cross-validation.
+4. **Prediction Pipeline**: For new data, the model processes inputs and outputs the probability of loan default or approval.
+5. **Optional Real-Time Scoring Component**: An API framework for batch scoring, with potential for real-time scoring through API endpoints.
 
 ## 🚀 Deployment and Scalability Considerations
 
-For business-as-usual (BAU) use, the following deployment and scalability considerations were made:
+For business-as-usual (BAU) use, I've looked at the deployment and scalability (theory):
 
-- **Batch Prediction Pipeline**: 📦 Designed to handle high volumes efficiently in batch mode.
-- **Cloud Hosting and Integration**: ☁️ Deployment options (e.g., AWS or GCP) to leverage scalable cloud resources.
-- **Real-Time Extension**: ⏱️ API deployment for real-time scoring, optimized to reduce latency if needed.
-- **Model Monitoring and Retraining**: 🔄 Regular monitoring and retraining scheduled to maintain accuracy as data distributions change.
+- **Batch Prediction Pipeline**: Designed to handle high volumes efficiently in batch mode.
+- **Cloud Hosting and Integration**: Deployment options (e.g., AWS or GCP) to leverage scalable cloud resources.
+- **Real-Time Extension**: API deployment for real-time scoring, optimized to reduce latency using fastAPI.
+- **Model Monitoring and Retraining**: Regular Dashboard monitoring and retraining scheduled to maintain accuracy as data distributions changes
 
 ## 📈 Estimated Impact and ROI
 
@@ -86,3 +86,47 @@ The deployment of this model is expected to bring significant benefits:
 - **Enhance Customer Experience**: 😊 Faster approvals for low-risk customers improve satisfaction and retention.
 - **Expected ROI**: 💸 Improved loan performance is anticipated to lead to cost savings and reduced manual intervention. The exact ROI depends on improvements in Lending Club’s default rates and operational savings.
 
+## Impact of being wrong (detailed analysis)
+
+### The cost of being wrong
+
+In attempt to understand the cost of error I've used a sample number of 1000 predictions. The question I'm asking myself is the following:
+
+How much is the cost of the time spent researching, execution, and closing false negatives, and false positives?
+
+I'll use Precision and Recall to calculate this. We'll also substitue a few numbers to simulate cost in minutes.
+
+We have the following information:
+
+- **Gradient Boosting:**
+    - Precsion (after SMOTE) 0.5523
+    - Recall (after SMOTE) 0.4991
+
+- **Random Forest:**
+    - Precsion (after SMOTE) 0.6833
+    - Recall (after SMOTE) 0.4325
+
+Expected number of defaults = Sum of defaults / Total data set =  12431 / 63689 = 0.1951 * 100 = 20%
+
+Using 1000 applicants or current loans as a base figure.
+
+1000 * 0.20 = 800 estimated non defaults, leaving us with 200 actual defaults estimated.
+
+- **Gradient Boosting:**
+    - False Positives = Precsion (after SMOTE) = (1 - 0.5523) * 800 =  358
+    - False Negatives = Recall (after SMOTE) = (1 - 0.4991) * 200 = 100
+    - Total of incorrect predictions 458
+
+- **Random Forest:**
+    - False Positives = Precsion (after SMOTE) = (1 - 0.6833) * 800 =  253
+    - False Negatives = Recall (after SMOTE) = (1 - 0.4325) * 200 = 114
+    - Total of incorrect predictions 367
+
+The cost of for each approach can be calculated by multiplying our results against the cost of a False Positive, and the cost of a False Negative.
+
+Let's assume the cost of a False Positive (revenue loss maybe denying a loan) equates to 2500, and the cost of a False Negtive (loss from a customer defaulting) equates to 5600.
+
+**Gradient Boosting** = (358 * 2500) + (100 * 5600) = 1,455,000
+**Random Forest** = (253 * 2500) + (114 * 5600) = 1,270,900
+
+In the above scenario with these very subjective numbers we'd be best opting for the Random Forest which has a lower cost of being wrong.
