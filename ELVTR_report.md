@@ -21,6 +21,8 @@ The aim of this project was to create a loan application scoreing model leveragi
 3. **Feature Engineering**: New features were introduced to simplify the collected data. This was completed either via grouping or the combination of multiple data points, this enriched the dataset and improved the ML models predictive accuracy albeit we still have data leakage and overfitted outputs. The main difference between this assignement and the previous one is that the categorical encoding works in this assignement allowing for more accurate results. Nevertheless, our data needs a bit more tuning. I can see that I've removed columns from the second ML run but not from later code as a result we're still running 103 features in SHAP although the RFE selected 23. I did however catch this when running the NN Models and reduced the selection to the RFE selected values.
 4. **Model Selection**: I ran various models (out of curiosity and based on the mind maps shared by Adrian), Logistic Regression, Decision Trees, and Random Forest, were all evaluated. Random Forest was chosen for its balance of accuracy, and interpretabiliyt. I shuffled model parameters to determine their impact on the final scores. Balancing accuracty, precision and recall proved to be tricky with initial models scoring above a realistic value i.e. 99%. ***!! The notebook in this GitHub is more recent than the one submitted !!***
 
+![image](https://github.com/user-attachments/assets/0b0f78c6-7010-4502-a48b-c368892a230b)
+
 ### 🔍 Rationale for Model Selection of our baseline model
 I decided to proceed with two models (Gradient Boosting and Logistic Regression). Both performed well when ran against our transformed data.
 
