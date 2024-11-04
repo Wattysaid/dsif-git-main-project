@@ -100,6 +100,6 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 
 Install dependencies with:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt # updated with all package dependancies 4th Nov. 2024
 ```
 
