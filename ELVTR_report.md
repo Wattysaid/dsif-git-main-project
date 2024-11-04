@@ -14,15 +14,15 @@
 
 ## 🧠 Methodology, Approach, and Model Selection Rationale
 
-The aim of this project was to create a loan application scoring model leveraging predictive modelling for the Lending Club. To do this I analysed a data set of 100k client loans covering Active, In Progress, Defaulted and late loans. This resulted in a trained ML model that predicted with over 87% accuracy.
+The aim of this project was to create a loan application scoreing model leveraging predictive modelling for the Lending Club. To do this I analysed a data set of 100k client loans covering Active, In Progress, Defaulted and late loans. This resulted in a trained ML model that predicted with over 87% accuracy.
 
-1. **Data Cleaning and Preprocessing**: Missing values were handled, categorical variables encoded, and numerical variables normalized. Columns with low variance were removed, and outliers adjusted to enhance model performance. This proved to be the most time consuming part of the assignment with a lot of reasearch and additional reading going on in the background.
-2. **Exploratory Data Analysis (EDA)**: Here I analysed feature correlations and distributions to gain insights into key factors that could possible predict or influence a postive or negative loan status outcome. Features were filtered following a pre hardship grouping. The entire pre hardship feature list was split into three seperate lists for a deeper analysis. This led to several changes i.e. simplifying categorical data into new groupings, removal of data with no variation i.e. unique columns (`id`), etc.
-3. **Feature Engineering**: New features were introduced to simplify the collected data. This was completed either via grouping or the combination of multiple data points, this enriched the dataset and improved the ML models predictive accuracy albeit we still have data leakage and overfitted outputs. The search is will continue.
-4. **Model Selection**: Various models, such as Logistic Regression, Decision Trees, and Random Forest, were evaluated. Random Forest was chosen for its balance of accuracy, interpretability, and robustness. I shuffled model parameters to determine their impact on the final scores. Balancing accuracty, precision and recall proved to be tricky with initial models scoring above a realistic value i.e. 99%.
+1. **Data Cleaning and Preprocessing**: Missing values were handled, categorical variables encoded, and numerical variables normalised. Columns with low variance were removed, and outliers adjusted to enhance model performance. This proved to be the most time consuming part of the assignment with a lot of reasearch and additional reading to make the most out of our data.
+2. **Exploratory Data Analysis (EDA)**: Here I analysed feature correlations and distributions to gain insights into key factors that could possible predict or influence a postive or negative loan status outcome. Features were filtered following a pre hardship grouping (this was also, very time consuming as the data dictionary didn't always make sense. In a real life scenario I'd reach out to SMEs.). The entire pre hardship feature list was split into three seperate lists for a deeper analysis. This led to several changes i.e. simplifying categorical data into new groupings, removal of data with no variation i.e. unique columns (`id`), etc. I faced several challenges during this phase in particular handling the outliers. Some values were capped, some retained the outliers e.g. `total_pymnt`, some were transformed using square root transformation. I avoided removing any outliers given the nature of the data.
+3. **Feature Engineering**: New features were introduced to simplify the collected data. This was completed either via grouping or the combination of multiple data points, this enriched the dataset and improved the ML models predictive accuracy albeit we still have data leakage and overfitted outputs. The main difference between this assignement and the previous one is that the categorical encoding works in this assignement allowing for more accurate results. Nevertheless, our data needs a bit more tuning. I can see that I've removed columns from the second ML run but not from later code as a result we're still running 103 features in SHAP although the RFE selected 23. I did however catch this when running the NN Models and reduced the selection to the RFE selected values.
+4. **Model Selection**: I ran various models (out of curiosity and based on the mind maps shared by Adrian), Logistic Regression, Decision Trees, and Random Forest, were all evaluated. Random Forest was chosen for its balance of accuracy, and interpretabiliyt. I shuffled model parameters to determine their impact on the final scores. Balancing accuracty, precision and recall proved to be tricky with initial models scoring above a realistic value i.e. 99%. ***!! The notebook in this GitHub is more recent than the one submitted !!***
 
 ### 🔍 Rationale for Model Selection of our baseline model
-I decided to proceed with the two models in particular. These were the Gradient Boosting and Logistic Regression. Both performed well when ran against our transformed data.
+I decided to proceed with two models (Gradient Boosting and Logistic Regression). Both performed well when ran against our transformed data.
 
 was selected due to its ability to handle complex relationships and reduce overfitting risks, as it combines the predictions of multiple decision trees.
 
@@ -57,9 +57,10 @@ was selected due to its ability to handle complex relationships and reduce overf
 ### 🔍 Rationale for Model Selection of our baseline model
 
 
+
 ## 🏗️ Architecture of the Final Solution
 
-The final solution consists of a multi-stage pipeline (I sacrificed the application building to focus on teh 40pts project):
+The final solution consists of a multi-stage pipeline (I sacrificed the application building to focus on the 40pts project, but might have this in place by the time you guys get to reviewing the assignment):
 
 1. **Data Ingestion and Preprocessing**: 📥 Data is loaded, cleaned, and preprocessed with feature encoding, standardisation, and normalisation.
 2. **Feature Engineering and Selection**: 🔨 Relevant features are selected and some created and fed into the model.
