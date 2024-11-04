@@ -89,7 +89,7 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 
 - **Data Cleaning**: Importance of preprocessing to ensure data quality.
 - **Feature Selection**: Methods to retain meaningful variables for modelling.
-- **Exploratory Analysis**: Using visualisations to understand trends.
+- **Exploratory Analysis**: Using visualisations to understand the data.
 - **Predictive Modelling**: Application of machine learning algorithms for classification tasks.
 
 ## 📋 Requirements
