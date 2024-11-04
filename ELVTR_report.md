@@ -79,12 +79,12 @@ For business-as-usual (BAU) use, I've looked at the deployment and scalability (
 
 ## 📈 Estimated Impact and ROI
 
-The deployment of this model is expected to bring significant benefits:
+The deployment of this model (once the overfitting corrected):
 
-- **Reduce Loan Default Rates**: 🔒 Accurately identifies high-risk loan applications, reducing defaults and improving portfolio health.
-- **Increase Operational Efficiency**: 🏃 Streamlines the decision-making process, reducing time and resources spent on manual evaluations.
-- **Enhance Customer Experience**: 😊 Faster approvals for low-risk customers improve satisfaction and retention.
-- **Expected ROI**: 💸 Improved loan performance is anticipated to lead to cost savings and reduced manual intervention. The exact ROI depends on improvements in Lending Club’s default rates and operational savings.
+- **Reduce Loan Default Rates**: Accurately identify high-risk loan applications, reducing defaults and improving portfolio health. Possability to be included in teller applications.
+- **Increase Operational Efficiency**: Simplifies the decision-making process, reducing time and resources spent on manual evaluations.
+- **Enhance Customer Experience**: Faster approvals for low-risk customers improving satisfaction, and employee workload.
+- **Expected ROI**: Improved loan performance is anticipated to lead to cost savings and reduced manual intervention.
 
 ## Impact of being wrong (detailed analysis)
 
