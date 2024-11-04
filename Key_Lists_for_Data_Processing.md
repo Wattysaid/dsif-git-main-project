@@ -18,6 +18,9 @@ Throughout the analysis, several key lists are used to organise and manage speci
 
 The project utilises several organised lists to streamline the handling and transformation of specific feature types within the dataset. Each list—whether for Boolean, numerical, categorical, or newly engineered features—supports a structured approach to data preparation, ensuring that features are transformed, encoded, and scaled as needed. These lists facilitate targeted processing steps, such as encoding Boolean values, scaling numerical data, and handling categorical variables, thereby maintaining data integrity and consistency across modelling phases. This organised structure allows for efficient feature engineering and selection, ultimately enhancing the model's ability to accurately predict loan approval outcomes.
 
+![image](https://github.com/user-attachments/assets/41be1f7e-1e19-4b90-925b-645a19816601)
+
+
 ## 🔍 `boolean_list` - Boolean Variables
 - **Creation and Identification**: The notebook creates the `boolean_list` by identifying binary or Boolean fields in the dataset. This is achieved by checking for columns with only `True/False` or `1/0` values, ensuring that these variables are correctly recognised.
 - **Encoding and Cleaning**: The list is then used to apply uniform transformations, such as encoding Boolean variables as binary integers (if necessary), to prepare them for model input.
