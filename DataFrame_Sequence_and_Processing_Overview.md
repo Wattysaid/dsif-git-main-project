@@ -20,6 +20,9 @@ Here we'll explore at a high level the sequence of DataFrames used throughout th
 
 This project involves a series of transformations and analyses to prepare the loan data for predictive modelling. Each DataFrame builds on previous steps, ensuring a thorough and logical progression from raw data to fully prepared training and testing sets. These processing steps enable robust feature selection, handling of missing values, encoding, and scaling, laying the groundwork for a reliable model to predict loan approval statuses.
 
+![image](https://github.com/user-attachments/assets/24952e03-c9cc-4abc-9354-080e900e19e4)
+
+
 ## DataFrames and Their Processing Sequence
 
 ### 1. `df` - Raw Loan Data 🗃️
