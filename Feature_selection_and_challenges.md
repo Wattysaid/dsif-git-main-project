@@ -16,7 +16,8 @@
 
 The results of the RFE excercise are captured below. Before getting to these results I first reviewed the data dictionary. I created logical groupings for the data then created two groups pre and post hardship. I created this grouping off the back of the data dictionary. I then proceeded to evaluate the data I grouped under the pre-hardship category.
 
----
+![image](https://github.com/user-attachments/assets/164ff460-9af8-499f-a0e7-a7636db73d4c)
+
 
 ### 🗂️ RFE Features by logical grouping (grouping and pre-hardship)
 
