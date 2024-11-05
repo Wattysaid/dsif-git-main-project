@@ -1,4 +1,7 @@
-📊 Lending Club Loan Analysis - ELVTR Data Science Course Project
+![image](https://github.com/user-attachments/assets/08fed4ac-66bf-48a2-af39-d6fa2c4ac6af)
+
+# ELVTR Data Science Course Project
+#📊 Lending Club Loan Analysis
 
 ![image](https://github.com/user-attachments/assets/31891671-e12d-44b6-a156-18d28dbe8672)
 
