@@ -1,8 +1,8 @@
 # 📊 Lending Club Loan Analysis - ELVTR Data Science Course Project
 
-This project is part of the ELVTR Data Science course, designed to demonstrate the application of data science skills in a financial context. The primary goal is to analyse and model a dataset of loan applications to predict loan approval statuses.
-
 ![image](https://github.com/user-attachments/assets/31891671-e12d-44b6-a156-18d28dbe8672)
+
+This project is part of the ELVTR Data Science course, designed to demonstrate the application of data science skills in a financial context. The primary goal is to analyse and model a dataset of loan applications to predict loan approval statuses.
 
 ## 🔗 Outline
 - [📊 Lending Club Loan Analysis - ELVTR Data Science Course Project](#-lending-club-loan-analysis---elvtr-data-science-course-project)
