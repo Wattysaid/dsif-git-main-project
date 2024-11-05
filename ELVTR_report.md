@@ -26,7 +26,7 @@ The aim of this project was to create a loan application scoreing model leveragi
 ### 🔍 Rationale for Model Selection of our baseline model
 I decided to proceed with two models (Gradient Boosting and Logistic Regression). Both performed well when ran against our transformed data.
 
-was selected due to its ability to handle complex relationships and reduce overfitting risks, as it combines the predictions of multiple decision trees.
+this was the baseline model and was challanged later on in the process.
 
 ## ✅ Advantages and ⚠️ Limitations of our baseline model 
 
