@@ -34,8 +34,8 @@ Welcome to the DSIF Main Project repository. This structure provides an organise
 ## 🔗 Table of Contents
 - [📁 Notebooks](https://github.com/Wattysaid/dsif-git-main-project/tree/main/elvtr_main_project/notebooks)
 - [📁 Models & Results](https://github.com/Wattysaid/dsif-git-main-project/tree/main/elvtr_main_project/models)
-- [📁 Documentation]([#documentation](https://github.com/Wattysaid/dsif-git-main-project/tree/main/elvtr_main_project/docs))
-- [📁 Reports]([#scripts](https://github.com/Wattysaid/dsif-git-main-project/tree/main/elvtr_main_project/reports))
+- [📁 Documentation](https://github.com/Wattysaid/dsif-git-main-project/tree/main/elvtr_main_project/docs)
+- [📁 Reports](https://github.com/Wattysaid/dsif-git-main-project/tree/main/elvtr_main_project/reports)
 
 
 ![image](https://github.com/user-attachments/assets/5642d472-eb07-43b5-a586-6900a9448795)
