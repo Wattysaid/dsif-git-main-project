@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/08fed4ac-66bf-48a2-af39-d6fa2c4ac6af)
+![image](https://github.com/user-attachments/assets/e66e2982-c44d-4484-a44a-253d36de9617)
 
 # ELVTR Data Science Course Project
 #📊 Lending Club Loan Analysis
