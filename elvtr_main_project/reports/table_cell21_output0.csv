@@ -1,0 +1,91 @@
+Unnamed: 0,Group,Field,Pre-Hardship,Post-Hardship
+0,Credit History,earliest_cr_line,Yes,No
+1,Credit History,fico_range_high,Yes,No
+2,Credit History,fico_range_low,Yes,No
+3,Credit History,last_fico_range_high,No,No
+4,Credit History,last_fico_range_low,No,No
+5,Credit History,mo_sin_old_il_acct,Yes,No
+6,Credit History,mo_sin_old_rev_tl_op,Yes,No
+7,Credit History,num_accts_ever_120_pd,Yes,No
+8,Credit History,num_tl_120dpd_2m,Yes,No
+9,Credit History,pub_rec,Yes,No
+10,Credit History,pub_rec_bankruptcies,Yes,No
+11,Current Debt and Payment Behaviors,acc_now_delinq,Yes,No
+12,Current Debt and Payment Behaviors,all_util,Yes,No
+13,Current Debt and Payment Behaviors,bc_open_to_buy,Yes,No
+14,Current Debt and Payment Behaviors,bc_util,Yes,No
+15,Current Debt and Payment Behaviors,chargeoff_within_12_mths,Yes,No
+16,Current Debt and Payment Behaviors,collections_12_mths_ex_med,Yes,No
+17,Current Debt and Payment Behaviors,delinq_2yrs,Yes,No
+18,Current Debt and Payment Behaviors,delinq_amnt,Yes,No
+19,Current Debt and Payment Behaviors,max_bal_bc,Yes,No
+20,Current Debt and Payment Behaviors,mths_since_last_delinq,Yes,No
+21,Current Debt and Payment Behaviors,num_rev_accts,Yes,No
+22,Current Debt and Payment Behaviors,num_rev_tl_bal_gt_0,Yes,No
+23,Current Debt and Payment Behaviors,percent_bc_gt_75,Yes,No
+24,Current Debt and Payment Behaviors,revol_bal,Yes,No
+25,Current Debt and Payment Behaviors,revol_util,Yes,No
+26,Current Debt and Payment Behaviors,tot_coll_amt,Yes,No
+27,Current Debt and Payment Behaviors,tot_cur_bal,Yes,No
+28,Current Debt and Payment Behaviors,tot_hi_cred_lim,Yes,No
+29,Current Debt and Payment Behaviors,total_bal_ex_mort,Yes,No
+30,Current Debt and Payment Behaviors,total_bc_limit,Yes,No
+31,Employment,emp_length,Yes,No
+32,Employment,emp_title,Yes,No
+33,Employment,annual_inc,Yes,No
+34,Employment,annual_inc_joint,Yes,No
+35,Credit Inquiries,inq_fi,Yes,No
+36,Credit Inquiries,inq_last_12m,Yes,No
+37,Credit Inquiries,inq_last_6mths,Yes,No
+38,Credit Inquiries,num_tl_op_past_12m,Yes,No
+39,Loan Application Information,loan_amnt,Yes,No
+40,Loan Application Information,term,Yes,No
+41,Loan Application Information,int_rate,Yes,No
+42,Loan Application Information,application_type,Yes,No
+43,Loan Application Information,grade,Yes,No
+44,Loan Application Information,sub_grade,Yes,No
+45,Loan Application Information,purpose,Yes,No
+46,Loan Application Information,issue_d,Yes,No
+47,Loan Application Information,home_ownership,Yes,No
+48,Loan Application Information,zip_code,Yes,No
+49,Loan Application Information,addr_state,Yes,No
+50,Loan Application Information,title,Yes,No
+51,Loan Application Information,desc,No,No
+52,Loan Application Information,url,No,No
+53,Hardship and Settlement Information,hardship_flag,No,Yes
+54,Hardship and Settlement Information,hardship_type,No,Yes
+55,Hardship and Settlement Information,hardship_reason,No,Yes
+56,Hardship and Settlement Information,hardship_status,No,Yes
+57,Hardship and Settlement Information,hardship_start_date,No,Yes
+58,Hardship and Settlement Information,hardship_end_date,No,Yes
+59,Hardship and Settlement Information,hardship_amount,No,Yes
+60,Hardship and Settlement Information,hardship_length,No,Yes
+61,Hardship and Settlement Information,settlement_status,No,Yes
+62,Hardship and Settlement Information,settlement_date,No,Yes
+63,Hardship and Settlement Information,settlement_amount,No,Yes
+64,Hardship and Settlement Information,settlement_percentage,No,Yes
+65,Hardship and Settlement Information,settlement_term,No,Yes
+66,Co-Borrower Information,annual_inc_joint,Yes,No
+67,Co-Borrower Information,dti_joint,Yes,No
+68,Co-Borrower Information,verified_status_joint,No,No
+69,Co-Borrower Information,revol_bal_joint,No,No
+70,Co-Borrower Information,sec_app_fico_range_low,No,No
+71,Co-Borrower Information,sec_app_fico_range_high,No,No
+72,Co-Borrower Information,sec_app_earliest_cr_line,No,No
+73,Co-Borrower Information,sec_app_mort_acc,No,No
+74,Co-Borrower Information,sec_app_open_acc,No,No
+75,Co-Borrower Information,sec_app_revol_util,No,No
+76,Loan Performance,funded_amnt,Yes,No
+77,Loan Performance,funded_amnt_inv,Yes,No
+78,Loan Performance,out_prncp,Yes,No
+79,Loan Performance,out_prncp_inv,Yes,No
+80,Loan Performance,total_pymnt,Yes,No
+81,Loan Performance,total_pymnt_inv,Yes,No
+82,Loan Performance,total_rec_int,Yes,No
+83,Loan Performance,total_rec_late_fee,Yes,No
+84,Loan Performance,total_rec_prncp,Yes,No
+85,Loan Performance,recoveries,No,No
+86,Loan Performance,collection_recovery_fee,No,No
+87,Loan Performance,last_pymnt_amnt,No,No
+88,Loan Performance,last_pymnt_d,No,No
+89,Loan Performance,next_pymnt_d,No,No

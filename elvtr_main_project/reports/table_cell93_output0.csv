@@ -1,0 +1,6 @@
+Unnamed: 0,earliest_cr_line_missing_clean_kn,fico_range_high_missing_clean_kn,fico_range_low_missing_clean_kn,last_fico_range_high_missing_clean_kn,last_fico_range_low_missing_clean_kn,mo_sin_old_il_acct_missing_clean_kn,mo_sin_old_rev_tl_op_missing_clean_kn,num_accts_ever_120_pd_missing_clean_kn,num_tl_120dpd_2m_missing_clean_kn,pub_rec_missing_clean_kn,pub_rec_bankruptcies_missing_clean_kn,emp_length_missing_clean_kn,emp_title_missing_clean_kn,annual_inc_missing_clean_kn,annual_inc_joint_missing_clean_kn,inq_fi_missing_clean_kn,inq_last_12m_missing_clean_kn,inq_last_6mths_missing_clean_kn,num_tl_op_past_12m_missing_clean_kn
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0
+3,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0
+4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0

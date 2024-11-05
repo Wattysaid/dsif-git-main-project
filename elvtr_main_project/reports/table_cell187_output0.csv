@@ -1,0 +1,6 @@
+Unnamed: 0,loan_status_grouped_kn,loan_status_grouped_kn.1,home_ownership_grouped_kn,sub_grade,initial_list_status,addr_state,loan_status_grouped2_kn,hardship_status_kn,grade,application_type,hardship_reason_grouped_kn,title,purpose,verification_status
+0,In Progress,In Progress,MORTGAGE,B5,w,NY,NoDefault,,B,Individual,,Home improvement,home_improvement,Source Verified
+1,In Progress,In Progress,RENT,B2,w,LA,NoDefault,,B,Individual,,Credit card refinancing,credit_card,Source Verified
+2,Completed,Completed,MORTGAGE,B3,f,FL,NoDefault,,B,Individual,,Credit card refinancing,credit_card,Not Verified
+3,In Progress,In Progress,MORTGAGE,B4,w,OH,NoDefault,,B,Individual,,Debt consolidation,debt_consolidation,Not Verified
+4,Completed,Completed,MORTGAGE,C2,w,NE,NoDefault,,C,Individual,,Debt consolidation,debt_consolidation,Source Verified

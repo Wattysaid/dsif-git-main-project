@@ -1,0 +1,6 @@
+purpose,car,credit_card,debt_consolidation,educational,home_improvement,house,major_purchase,medical,moving,other,renewable_energy,small_business,vacation,wedding
+loan_status_grouped_kn,Unnamed: 1_level_1,Unnamed: 2_level_1,Unnamed: 3_level_1,Unnamed: 4_level_1,Unnamed: 5_level_1,Unnamed: 6_level_1,Unnamed: 7_level_1,Unnamed: 8_level_1,Unnamed: 9_level_1,Unnamed: 10_level_1,Unnamed: 11_level_1,Unnamed: 12_level_1,Unnamed: 13_level_1,Unnamed: 14_level_1
+Completed,561,11772,28708,15,3499,308,1247,608,365,3190,20,516,373,76
+Defaulted,87,2452,7457,2,746,91,250,165,94,784,17,201,75,10
+In Progress,336,9504,18929,0,2376,292,711,392,175,2067,15,327,232,1
+Late,3,226,553,0,52,6,15,12,7,55,2,17,6,0

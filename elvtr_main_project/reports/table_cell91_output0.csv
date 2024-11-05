@@ -1,0 +1,6 @@
+Unnamed: 0,addr_state,application_type,earliest_cr_line,emp_length,emp_title,grade,home_ownership,initial_list_status,int_rate,issue_d,loan_status,purpose,revol_util,sub_grade,term,title,verification_status,zip_code,loan_status_grouped_kn,loan_status_grouped2_kn,hardship_status_kn
+0,NY,Individual,Dec-04,10+ years,cashier,B,MORTGAGE,w,13.08%,Mar-20,Current,home_improvement,82.80%,B5,36 months,Home improvement,Source Verified,115xx,Active Loan,NoDefault,
+1,LA,Individual,Jan-04,6 years,ABM,B,RENT,w,9.16%,Feb-16,Current,credit_card,64.50%,B2,60 months,Credit card refinancing,Source Verified,708xx,Active Loan,NoDefault,
+2,FL,Individual,Apr-10,10+ years,driver,B,MORTGAGE,f,10.49%,Jan-15,Fully Paid,credit_card,52.60%,B3,36 months,Credit card refinancing,Not Verified,347xx,Paid Loan,NoDefault,
+3,OH,Individual,Oct-05,,,B,MORTGAGE,w,11.05%,Jun-18,Current,debt_consolidation,12.10%,B4,60 months,Debt consolidation,Not Verified,443xx,Active Loan,NoDefault,
+4,NE,Individual,Apr-08,10+ years,Shipping Clerk,C,MORTGAGE,w,13.59%,Jan-18,Fully Paid,debt_consolidation,27.10%,C2,60 months,Debt consolidation,Source Verified,681xx,Paid Loan,NoDefault,
