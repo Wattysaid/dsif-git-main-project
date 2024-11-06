@@ -18,6 +18,26 @@ This document contains all image files from the reports directory.
 
 This document contains all image files from the reports directory.
 
+Let's take a quick look at our Y variable (`loan_status`) and get a feel for some obvious view points e.g. loan purpose, states in which loan default are higher, etc. This is largely subjective but could lead to some quick wins or cleaning insight.
+
+Our first image is a grouped view of `loan_status` by `loan_purpose` showing us that the marjority of loans are for debt conslidation, credit card consumption and home improvement.
+
+![image_cell165_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell165_output0.png)
+
+Our second image shows us the grouped `loan_status` by `verification_status`.
+
+![image_cell167_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell167_output0.png)
+
+Below we can see the number of loans by state. Let's take a closer look.
+
+![image_cell170_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell170_output0.png)
+
+I've split the data to gain better insight into the grouped `loan_status` by state. Here we can see that majority of loans are spread across 4 states but more importantly that there is a large ratio descrepancy when looking at the ratio of defaulted loans when compared to the total loan appcliations in various states. Let's pull a cross table to confirm our visual analysis.
+
+![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
+
+# Data Unique value check
+
 Here I'm looking at the categorical distribution of our data. Too many values within the data set make for poor visuals and should be grouped accordingly. This allows us to quickly notice one of these grouping options i.e. by emp_title. This could, for example, be grouped by equivalent hierarchical roles.
 
 ![image_cell108_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell108_output1.png)
@@ -105,10 +125,6 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell162_output73.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output73.png)
 ![image_cell162_output76.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output76.png)
 ![image_cell162_output79.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output79.png)
-![image_cell165_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell165_output0.png)
-![image_cell167_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell167_output0.png)
-![image_cell170_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell170_output0.png)
-![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
 ![image_cell237_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output11.png)
 ![image_cell237_output14.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output14.png)
 ![image_cell237_output15.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output15.png)
