@@ -3,9 +3,21 @@
 This document contains all image files from the reports directory.
 
 ![image_cell108_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell108_output1.png)
+
+Here I'm looking at the categorical distribution of our data. Too many values within the data set make for poor visuals and should be grouped accordingly. This allows us to quickly notice one of these grouping options i.e. by emp_title. This could, for example, be grouped by equivalent hierarchical roles.
+
 ![image_cell110_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell110_output1.png)
+
+Here we can see an extension of the aforementioned excercise. Essentially including additional values previously excluded. This allowed me to loop through our lists and equally display the numerical data.
+
 ![image_cell110_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell110_output3.png)
+
+Through a similar lens I'm looking for numerical values that allow for deeper insight into the values we have. Here we can see that the first 15 numerical values contain a large portoin of the data with various levels of value counts. For example, visually analysing some of our data with too few variations won't contribute to benefitcing results in our ML analysis.
+
 ![image_cell112_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output1.png)
+
+
+
 ![image_cell112_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output3.png)
 ![image_cell112_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output5.png)
 ![image_cell112_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output7.png)
