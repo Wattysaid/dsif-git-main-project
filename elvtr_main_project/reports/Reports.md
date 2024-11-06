@@ -34,15 +34,22 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 
 Here we're looking at the key points surrounding our categorical data. I'm looking for data I can encode, group into more meaningful buckets, poor data, and possible features to include in our analysis.
 
-
+In this first image we can see that `emp_length` can be changed to a int. We'll take action later by changing the data type to int and removeing the origninal column from our `new_features` list and the df_dropped.
 
 ![image_cell112_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output1.png)
 
-
+This is our Y variable that will later be used as the prediction value (`loan_status`). We'll group this field to simplify the output.
 
 ![image_cell112_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output3.png)
+
+This next view shows us the `sub_grade` for loans. This is arguably too granular and we'll remove this column, and leverage the `grade` column only. However, before doing so we'll check bot `sub_grade` and `grade` against our `loan_status` feature.
+
 ![image_cell112_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output5.png)
+
+Here we can see another field that we can transform into a int data type value. Considering the low variation we'll could equally look at dropping this altogether. Let's flag this one for further analysis later on and see how this impacts the overall data.
+
 ![image_cell112_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output7.png)
+
 ![image_cell155_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell155_output1.png)
 ![image_cell156_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output1.png)
 ![image_cell156_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output11.png)
