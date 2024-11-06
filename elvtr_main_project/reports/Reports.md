@@ -161,7 +161,17 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell242_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output5.png)
 ![image_cell242_output8.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output8.png)
 ![image_cell242_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output9.png)
+
+# Feature importance
+
+Here are feature importance results after running RFE.
+
 ![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
+
+# Model Training
+
+Let's train our model and evaluate the results.
+
 ![image_cell291_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell291_output2.png)
 ![image_cell293_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell293_output1.png)
 ![image_cell295_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell295_output1.png)
