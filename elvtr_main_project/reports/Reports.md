@@ -30,6 +30,11 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 
 ![image_cell110_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell110_output3.png)
 
+# Categorical data analysis
+
+Here we're looking at the key points surrounding our categorical data. I'm looking for data I can encode, group into more meaningful buckets, poor data, and possible features to include in our analysis.
+
+
 
 ![image_cell112_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output1.png)
 
