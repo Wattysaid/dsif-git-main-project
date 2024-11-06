@@ -50,7 +50,8 @@ Here we can see another field that we can transform into a int data type value. 
 
 ![image_cell112_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output7.png)
 
-![image_cell155_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell155_output1.png)
+# Boolean data analysis
+
 ![image_cell156_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output1.png)
 ![image_cell156_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output11.png)
 ![image_cell156_output13.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output13.png)
