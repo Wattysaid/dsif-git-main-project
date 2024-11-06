@@ -73,6 +73,11 @@ Here we're looking for one value items, these won't add any meaningful insight a
 ![image_cell156_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output5.png)
 ![image_cell156_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output7.png)
 ![image_cell156_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output9.png)
+
+# Numerical data analysis
+
+Here we're looking for distribution and missing value data. Does our numerical data set contain sufficient variation to be of predictive value? We can safely exclude any numerical data that is comprised of unique values, or too small ranges/variation.
+
 ![image_cell162_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output1.png)
 ![image_cell162_output10.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output10.png)
 ![image_cell162_output13.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output13.png)
