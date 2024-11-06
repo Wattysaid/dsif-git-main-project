@@ -30,7 +30,8 @@ Use this as a quick reference guide to navigate the project's main documents!
   ---
 
 # 📂 Repository Structure - DSIF Main Project
-[Home - ReadMe Overview](#-lending-club-loan-analysis---elvtr-data-science-course-project) | [Folder Structure](#-repository-structure---dsif-main-project) | [DataFrame Sequence and Processing Overview](#-lending-club-loan-analysis---dataframe-sequence-and-processing-overview) | [Key Lists for Data Processing](#key-lists-for-data-processing) | [ELVTR Report](#-ELVTR-Data-Science-Main-Project-Report)
+[Home](https://github.com/Wattysaid/dsif-git-main-project/blob/main/README.md) | [Structure](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Folder_Structure.md) | [DataFrame Overview](https://github.com/Wattysaid/dsif-git-main-project/blob/main/DataFrame_Sequence_and_Processing_Overview.md) | [Key Lists](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Key_Lists_for_Data_Processing.md) | [ELVTR Report](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ELVTR_report.md) | [Feature Challenges](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Feature_selection_and_challenges.md) | [Models & Results](https://github.com/Wattysaid/dsif-git-main-project/blob/main/ML_models_and_results.md) | [Neural Networks](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Neural_Network_selection.md) | [Feature Impact](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Understanding_feature_impact.md) | [Visuals](https://github.com/Wattysaid/dsif-git-main-project/blob/main/Visual_Analysis.md)
+
 
 Welcome to the DSIF Main Project repository. This structure provides an organised overview of the folders and files within the project. Use the hyperlinks to quickly navigate to specific sections and access the corresponding resources.
 
