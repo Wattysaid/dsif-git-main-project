@@ -14,6 +14,8 @@
 
 I organised the analysis by categorising features into Boolean, numerical, and categorical types, performing an Exploratory Data Analysis (EDA) for each group to understand unique values, distributions, and any potential inconsistencies.
 
+To see all the visual images produced click [here](elvtr_main_project/reports/Reports.md)
+
 ### 🧪 Unique Value Counts in Categorical Columns
 I began by identifying the number of unique values in categorical features to assess column complexity and determine if encoding or grouping was necessary.
 
