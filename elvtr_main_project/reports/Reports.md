@@ -18,6 +18,26 @@ This document contains all image files from the reports directory.
 
 This document contains all image files from the reports directory.
 
+Let's take a quick look at our Y variable (`loan_status`) and get a feel for some obvious view points e.g. loan purpose, states in which loan default are higher, etc. This is largely subjective but could lead to some quick wins or cleaning insight.
+
+Our first image is a grouped view of `loan_status` by `loan_purpose` showing us that the marjority of loans are for debt conslidation, credit card consumption and home improvement.
+
+![image_cell165_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell165_output0.png)
+
+Our second image shows us the grouped `loan_status` by `verification_status`.
+
+![image_cell167_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell167_output0.png)
+
+Below we can see the number of loans by state. Let's take a closer look.
+
+![image_cell170_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell170_output0.png)
+
+I've split the data to gain better insight into the grouped `loan_status` by state. Here we can see that majority of loans are spread across 4 states but more importantly that there is a large ratio descrepancy when looking at the ratio of defaulted loans when compared to the total loan appcliations in various states. Let's pull a cross table to confirm our visual analysis.
+
+![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
+
+# Data Unique value check
+
 Here I'm looking at the categorical distribution of our data. Too many values within the data set make for poor visuals and should be grouped accordingly. This allows us to quickly notice one of these grouping options i.e. by emp_title. This could, for example, be grouped by equivalent hierarchical roles.
 
 ![image_cell108_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell108_output1.png)
@@ -30,15 +50,30 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 
 ![image_cell110_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell110_output3.png)
 
+# Categorical data analysis
+
+Here we're looking at the key points surrounding our categorical data. I'm looking for data I can encode, group into more meaningful buckets, poor data, and possible features to include in our analysis.
+
+In this first image we can see that `emp_length` can be changed to a int. We'll take action later by changing the data type to int and removeing the origninal column from our `new_features` list and the df_dropped.
 
 ![image_cell112_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output1.png)
 
-
+This is our Y variable that will later be used as the prediction value (`loan_status`). We'll group this field to simplify the output.
 
 ![image_cell112_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output3.png)
+
+This next view shows us the `sub_grade` for loans. This is arguably too granular and we'll remove this column, and leverage the `grade` column only. However, before doing so we'll check bot `sub_grade` and `grade` against our `loan_status` feature.
+
 ![image_cell112_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output5.png)
+
+Here we can see another field that we can transform into a int data type value. Considering the low variation we'll could equally look at dropping this altogether. Let's flag this one for further analysis later on and see how this impacts the overall data.
+
 ![image_cell112_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output7.png)
-![image_cell155_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell155_output1.png)
+
+# Boolean data analysis
+
+Here we're looking for one value items, these won't add any meaningful insight and can be removed. However, multiple boolean values could be meaningful when matched with other boolean values. In this assignment we've opted for creating boolean indicators for missing fields. Essentially if a value is missing we've created a boolean marker (1 = Missing data point, 0 = Not missing a data point). Due to the nature of our data the fact that salary figures, or partnership situations are missing could provide insight. We will test this theory later.
+
 ![image_cell156_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output1.png)
 ![image_cell156_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output11.png)
 ![image_cell156_output13.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output13.png)
@@ -58,6 +93,11 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 ![image_cell156_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output5.png)
 ![image_cell156_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output7.png)
 ![image_cell156_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output9.png)
+
+# Numerical data analysis
+
+Here we're looking for distribution and missing value data. Does our numerical data set contain sufficient variation to be of predictive value? We can safely exclude any numerical data that is comprised of unique values, or too small ranges/variation.
+
 ![image_cell162_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output1.png)
 ![image_cell162_output10.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output10.png)
 ![image_cell162_output13.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output13.png)
@@ -85,10 +125,6 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 ![image_cell162_output73.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output73.png)
 ![image_cell162_output76.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output76.png)
 ![image_cell162_output79.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output79.png)
-![image_cell165_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell165_output0.png)
-![image_cell167_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell167_output0.png)
-![image_cell170_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell170_output0.png)
-![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
 ![image_cell237_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output11.png)
 ![image_cell237_output14.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output14.png)
 ![image_cell237_output15.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output15.png)
@@ -125,7 +161,17 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 ![image_cell242_output5.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output5.png)
 ![image_cell242_output8.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output8.png)
 ![image_cell242_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output9.png)
+
+# Feature importance
+
+Here are feature importance results after running RFE.
+
 ![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
+
+# Model Training
+
+Let's train our model and evaluate the results.
+
 ![image_cell291_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell291_output2.png)
 ![image_cell293_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell293_output1.png)
 ![image_cell295_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell295_output1.png)
