@@ -14,6 +14,16 @@
 
 This document contains all image files from the reports directory.
 
+# Report Navigation Menu
+
+- 📄 **Reports**
+- 📊 **Data Unique Value Check**
+- 📈 **Categorical Data Analysis**
+- ✔️ **Boolean Data Analysis**
+- 🔢 **Numerical Data Analysis**
+- ⭐ **Feature Importance**
+- 🤖 **Model Training**
+
 # Reports
 
 This document contains all image files from the reports directory.
