@@ -47,6 +47,7 @@ I've split the data to gain better insight into the grouped `loan_status` by sta
 ![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
 
 # Data Unique value check
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here I'm looking at the categorical distribution of our data. Too many values within the data set make for poor visuals and should be grouped accordingly. This allows us to quickly notice one of these grouping options i.e. by emp_title. This could, for example, be grouped by equivalent hierarchical roles.
 
@@ -61,6 +62,7 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 ![image_cell110_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell110_output3.png)
 
 # Categorical data analysis
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here we're looking at the key points surrounding our categorical data. I'm looking for data I can encode, group into more meaningful buckets, poor data, and possible features to include in our analysis.
 
@@ -81,6 +83,7 @@ Here we can see another field that we can transform into a int data type value. 
 ![image_cell112_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output7.png)
 
 # Boolean data analysis
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here we're looking for one value items, these won't add any meaningful insight and can be removed. However, multiple boolean values could be meaningful when matched with other boolean values. 
 
@@ -128,6 +131,7 @@ Here we can see that the following boolean values are facing the same fate of el
 ![image_cell156_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output9.png)
 
 # Numerical data analysis
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here we're looking for distribution and missing value data. Does our numerical data set contain sufficient variation to be of predictive value? We can safely exclude any numerical data that is comprised of unique values, or too small ranges/variation.
 
@@ -196,12 +200,14 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell242_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output9.png)
 
 # Feature importance
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here are feature importance results after running RFE.
 
 ![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
 
 # Model Training
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Let's train our model and evaluate the results.
 
