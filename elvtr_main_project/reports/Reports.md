@@ -162,6 +162,20 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell162_output73.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output73.png)
 ![image_cell162_output76.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output76.png)
 ![image_cell162_output79.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output79.png)
+
+# Feature importance
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
+
+Here are feature importance results after running an RFE excercise. This essentially results in a recursive elemination of features, in our case, eliminating 23 at a time/with every run. The chart shows the features in our data frame that are the most influential. Higher bars indicate a greater overall importance. Focusing on the RFE `selected_features` provides us with more meaningful and accurate predictive outcomes.
+
+![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
+
+# Baseline Model Selection
+
+In this section, I'm analysing various machine learning algorthms and displays a confusion matrix, ROC curve, and precision-recall curve—illustrate to illustrate each model's performance in predicting `loan_status`. 
+
+Each graphic provides insight into the set of model’s accuracy and balance, highlighting areas where it excels or requires fine-tuning. Analysing these results allows us to identify a baseline model for our predication tools.
+
 ![image_cell237_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output11.png)
 ![image_cell237_output14.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output14.png)
 ![image_cell237_output15.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output15.png)
@@ -199,19 +213,10 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell242_output8.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output8.png)
 ![image_cell242_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output9.png)
 
-# Feature importance
-[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
-
-Here are feature importance results after running an RFE excercise. This essentially results in a recursive elemination of features, in our case, eliminating 23 at a time/with every run. The chart shows the features in our data frame that are the most influential. Higher bars indicate a greater overall importance. Focusing on the RFE `selected_features` provides us with more meaningful and accurate predictive outcomes.
-
-![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
-
 # Model Training
 [**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
-In this section, I dive into training the model on the `selected_features` identified through RFE. I opted to display a confusion matrix, ROC curve, and precision-recall curve—illustrate to illustrate each model's performance in predicting `loan_status`. 
-
-Each graphic provides insight into the set of model’s accuracy and balance, highlighting areas where it excels or requires fine-tuning. Analysing these results allows us to identify a baseline model for our predication tools.
+In this section, I dive into training the selected model using various techniques e.g. early stopping, L2 regularisation, etc. this ensures we don't overfit out data.
 
 ![image_cell291_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell291_output2.png)
 ![image_cell293_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell293_output1.png)
