@@ -46,6 +46,13 @@ I've split the data to gain better insight into the grouped `loan_status` by sta
 
 ![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
 
+# Missing Data Analysis
+
+![image_cell42_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output2.png)
+![image_cell42_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output3.png)
+![image_cell55_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell55_output1.png)
+![image_cell75_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell75_output0.png)
+
 # Data Unique value check
 [**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
@@ -229,7 +236,4 @@ In this section, I dive into training the selected model using various technique
 ![image_cell309_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell309_output1.png)
 ![image_cell310_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell310_output1.png)
 ![image_cell316_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell316_output1.png)
-![image_cell42_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output2.png)
-![image_cell42_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output3.png)
-![image_cell55_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell55_output1.png)
-![image_cell75_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell75_output0.png)
+
