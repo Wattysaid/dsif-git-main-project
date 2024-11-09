@@ -50,7 +50,6 @@ I've split the data to gain better insight into the grouped `loan_status` by sta
 
 ![image_cell42_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output2.png)
 ![image_cell42_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output3.png)
-![image_cell55_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell55_output1.png)
 ![image_cell75_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell75_output0.png)
 
 # Data Unique value check
