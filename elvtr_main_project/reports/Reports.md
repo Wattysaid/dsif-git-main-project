@@ -202,7 +202,7 @@ Here we're looking for distribution and missing value data. Does our numerical d
 # Feature importance
 [**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
-Here are feature importance results after running RFE.
+Here are feature importance results after running an RFE excercise. This essentially results in a recursive elemination of features, in our case, eliminating 23 at a time/with every run. The chart shows the features in our data frame that are the most influential. Higher bars indicate a greater overall importance. Focusing on the RFE `selected_features` provides us with more meaningful and accurate predictive outcomes.
 
 ![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
 
