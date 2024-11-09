@@ -209,7 +209,9 @@ Here are feature importance results after running an RFE excercise. This essenti
 # Model Training
 [**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
-Let's train our model and evaluate the results.
+In this section, I dive into training the model on the `selected_features` identified through RFE. I opted to display a confusion matrix, ROC curve, and precision-recall curve—illustrate to illustrate each model's performance in predicting `loan_status`. 
+
+Each graphic provides insight into the set of model’s accuracy and balance, highlighting areas where it excels or requires fine-tuning. Analysing these results allows us to identify a baseline model for our predication tools.
 
 ![image_cell291_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell291_output2.png)
 ![image_cell293_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell293_output1.png)
