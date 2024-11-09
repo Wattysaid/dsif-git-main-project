@@ -76,19 +76,40 @@ Here we're looking for one value items, these won't add any meaningful insight a
 
 In this assignment I've opted for creating boolean indicator for missing fields. Essentially if a value is missing i've created a boolean marker (1 = Missing data point, 0 = Not missing a data point). Due to the nature of our data the fact that salary figures, or partnership situations are missing could provide insight. We will test this theory later.
 
+
+Here we can see that the `earliest_cr_line_missing` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output1.png)
 ![image_cell156_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output11.png)
 ![image_cell156_output13.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output13.png)
 ![image_cell156_output15.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output15.png)
 ![image_cell156_output17.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output17.png)
+
+Here we can see that the `pub_rec_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output19.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output19.png)
+
+Here we can see that the `pub_rec_bankruptices_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output21.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output21.png)
 ![image_cell156_output23.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output23.png)
+
+Here we can see that the `anuua_inc_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output25.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output25.png)
 ![image_cell156_output27.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output27.png)
+
+Here we can see that the `fico_range_high_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output29.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output29.png)
 ![image_cell156_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output3.png)
+
+Here we can see that the `inq_last_6mths_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output31.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output31.png)
+
+Here we can see that the following boolean values are facing the same fate of elimination from `fico_range_low_missing_clean_kn` to `last_fico_range_low_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output33.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output33.png)
 ![image_cell156_output35.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output35.png)
 ![image_cell156_output37.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output37.png)
