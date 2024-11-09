@@ -72,7 +72,9 @@ Here we can see another field that we can transform into a int data type value. 
 
 # Boolean data analysis
 
-Here we're looking for one value items, these won't add any meaningful insight and can be removed. However, multiple boolean values could be meaningful when matched with other boolean values. In this assignment we've opted for creating boolean indicators for missing fields. Essentially if a value is missing we've created a boolean marker (1 = Missing data point, 0 = Not missing a data point). Due to the nature of our data the fact that salary figures, or partnership situations are missing could provide insight. We will test this theory later.
+Here we're looking for one value items, these won't add any meaningful insight and can be removed. However, multiple boolean values could be meaningful when matched with other boolean values. 
+
+In this assignment I've opted for creating boolean indicator for missing fields. Essentially if a value is missing i've created a boolean marker (1 = Missing data point, 0 = Not missing a data point). Due to the nature of our data the fact that salary figures, or partnership situations are missing could provide insight. We will test this theory later.
 
 ![image_cell156_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output1.png)
 ![image_cell156_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output11.png)
