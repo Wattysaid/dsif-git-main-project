@@ -14,6 +14,16 @@
 
 This document contains all image files from the reports directory.
 
+# Report Navigation Menu
+
+- 📄 [**Reports**](#reports)
+- 📊 [**Data Unique Value Check**](#data-unique-value-check)
+- 📈 [**Categorical Data Analysis**](#categorical-data-analysis)
+- ✔️ [**Boolean Data Analysis**](#boolean-data-analysis)
+- 🔢 [**Numerical Data Analysis**](#numerical-data-analysis)
+- ⭐ [**Feature Importance**](#feature-importance)
+- 🤖 [**Model Training**](#model-training)
+
 # Reports
 
 This document contains all image files from the reports directory.
@@ -36,7 +46,14 @@ I've split the data to gain better insight into the grouped `loan_status` by sta
 
 ![image_cell171_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell171_output0.png)
 
+# Missing Data Analysis
+
+![image_cell42_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output2.png)
+![image_cell42_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output3.png)
+![image_cell75_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell75_output0.png)
+
 # Data Unique value check
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here I'm looking at the categorical distribution of our data. Too many values within the data set make for poor visuals and should be grouped accordingly. This allows us to quickly notice one of these grouping options i.e. by emp_title. This could, for example, be grouped by equivalent hierarchical roles.
 
@@ -51,6 +68,7 @@ Through a similar lens I'm looking for numerical values that allow for deeper in
 ![image_cell110_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell110_output3.png)
 
 # Categorical data analysis
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here we're looking at the key points surrounding our categorical data. I'm looking for data I can encode, group into more meaningful buckets, poor data, and possible features to include in our analysis.
 
@@ -71,22 +89,46 @@ Here we can see another field that we can transform into a int data type value. 
 ![image_cell112_output7.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell112_output7.png)
 
 # Boolean data analysis
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
-Here we're looking for one value items, these won't add any meaningful insight and can be removed. However, multiple boolean values could be meaningful when matched with other boolean values. In this assignment we've opted for creating boolean indicators for missing fields. Essentially if a value is missing we've created a boolean marker (1 = Missing data point, 0 = Not missing a data point). Due to the nature of our data the fact that salary figures, or partnership situations are missing could provide insight. We will test this theory later.
+Here we're looking for one value items, these won't add any meaningful insight and can be removed. However, multiple boolean values could be meaningful when matched with other boolean values. 
+
+In this assignment I've opted for creating boolean indicator for missing fields. Essentially if a value is missing i've created a boolean marker (1 = Missing data point, 0 = Not missing a data point). Due to the nature of our data the fact that salary figures, or partnership situations are missing could provide insight. We will test this theory later.
+
+
+Here we can see that the `earliest_cr_line_missing` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
 
 ![image_cell156_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output1.png)
 ![image_cell156_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output11.png)
 ![image_cell156_output13.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output13.png)
 ![image_cell156_output15.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output15.png)
 ![image_cell156_output17.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output17.png)
+
+Here we can see that the `pub_rec_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output19.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output19.png)
+
+Here we can see that the `pub_rec_bankruptices_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output21.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output21.png)
 ![image_cell156_output23.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output23.png)
+
+Here we can see that the `anuua_inc_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output25.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output25.png)
 ![image_cell156_output27.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output27.png)
+
+Here we can see that the `fico_range_high_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output29.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output29.png)
 ![image_cell156_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output3.png)
+
+Here we can see that the `inq_last_6mths_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output31.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output31.png)
+
+Here we can see that the following boolean values are facing the same fate of elimination from `fico_range_low_missing_clean_kn` to `last_fico_range_low_missing_clean_kn` marker is of no meaningful use to us. We will check later on for ratios if combining it it other features makes sense.
+
 ![image_cell156_output33.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output33.png)
 ![image_cell156_output35.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output35.png)
 ![image_cell156_output37.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output37.png)
@@ -95,6 +137,7 @@ Here we're looking for one value items, these won't add any meaningful insight a
 ![image_cell156_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell156_output9.png)
 
 # Numerical data analysis
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
 Here we're looking for distribution and missing value data. Does our numerical data set contain sufficient variation to be of predictive value? We can safely exclude any numerical data that is comprised of unique values, or too small ranges/variation.
 
@@ -125,6 +168,20 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell162_output73.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output73.png)
 ![image_cell162_output76.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output76.png)
 ![image_cell162_output79.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell162_output79.png)
+
+# Feature importance
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
+
+Here are feature importance results after running an RFE excercise. This essentially results in a recursive elemination of features, in our case, eliminating 23 at a time/with every run. The chart shows the features in our data frame that are the most influential. Higher bars indicate a greater overall importance. Focusing on the RFE `selected_features` provides us with more meaningful and accurate predictive outcomes.
+
+![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
+
+# Baseline Model Selection
+
+In this section, I'm analysing various machine learning algorthms and displays a confusion matrix, ROC curve, and precision-recall curve—illustrate to illustrate each model's performance in predicting `loan_status`. 
+
+Each graphic provides insight into the set of model’s accuracy and balance, highlighting areas where it excels or requires fine-tuning. Analysing these results allows us to identify a baseline model for our predication tools.
+
 ![image_cell237_output11.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output11.png)
 ![image_cell237_output14.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output14.png)
 ![image_cell237_output15.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell237_output15.png)
@@ -162,15 +219,10 @@ Here we're looking for distribution and missing value data. Does our numerical d
 ![image_cell242_output8.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output8.png)
 ![image_cell242_output9.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell242_output9.png)
 
-# Feature importance
-
-Here are feature importance results after running RFE.
-
-![image_cell276_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell276_output0.png)
-
 # Model Training
+[**Reports**](#reports) | [**Data Unique Value Check**](#data-unique-value-check) | [**Categorical Data Analysis**](#categorical-data-analysis) | [**Boolean Data Analysis**](#boolean-data-analysis) |  [**Numerical Data Analysis**](#numerical-data-analysis) |  [**Feature Importance**](#feature-importance) | [**Model Training**](#model-training)
 
-Let's train our model and evaluate the results.
+In this section, I dive into training the selected model using various techniques e.g. early stopping, L2 regularisation, etc. this ensures we don't overfit out data.
 
 ![image_cell291_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell291_output2.png)
 ![image_cell293_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell293_output1.png)
@@ -183,7 +235,4 @@ Let's train our model and evaluate the results.
 ![image_cell309_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell309_output1.png)
 ![image_cell310_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell310_output1.png)
 ![image_cell316_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell316_output1.png)
-![image_cell42_output2.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output2.png)
-![image_cell42_output3.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell42_output3.png)
-![image_cell55_output1.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell55_output1.png)
-![image_cell75_output0.png](https://raw.githubusercontent.com/Wattysaid/dsif-git-main-project/main/elvtr_main_project/reports/image_cell75_output0.png)
+
